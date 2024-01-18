@@ -1,0 +1,337 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Jan 10 21:22:14 2024
+| Host         : E7CB running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file computer_control_sets_placed.rpt
+| Design       : computer
+| Device       : xc7a75t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   270 |
+| Unused register locations in slices containing registers |    24 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            3 |
+|      8 |            1 |
+|    16+ |          265 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               8 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             588 |          164 |
+| Yes          | No                    | No                     |            4140 |         1033 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------+--------------------------------------------------------+---------------------------------------------------+------------------+----------------+
+|                    Clock Signal                    |                      Enable Signal                     |                  Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++----------------------------------------------------+--------------------------------------------------------+---------------------------------------------------+------------------+----------------+
+| ~Bregister_inst/register_inst/ByteMemo_reg[7]_0[7] |                                                        | Bregister_inst/register_inst/ByteMemo_reg[7]_0[7] |                1 |              2 |
+|  seg_led_inst/my_clock/CLK                         |                                                        |                                                   |                1 |              4 |
+|  CLK100MHz_IBUF_BUFG                               |                                                        |                                                   |                2 |              4 |
+| ~Reg_b_BUFG[6]                                     |                                                        | Reg_b_BUFG[6]                                     |                2 |              4 |
+| ~Reg_b_BUFG[5]                                     |                                                        | Reg_b_BUFG[5]                                     |                4 |              8 |
+|  CLK3Hz_IBUF_BUFG                                  |                                                        | PCregister_inst/PROGRAM10                         |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_13/Mux_13/writeout[0] |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_10/Mux_12/writeout[0] |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_10/Mux_10/writeout[0] |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_10/Mux_11/writeout[0] |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_10/Mux_13/writeout[0] |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_10/Mux_14/writeout[0] |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | PCregister_inst/E[0]                                   |                                                   |                1 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_0/Mux_10/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_0/Mux_11/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_0/Mux_12/writeout[0]  |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_0/Mux_14/writeout[0]  |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_0/Mux_3/E[0]          |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_0/Mux_13/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_0/Mux_9/writeout[0]   |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_0/Mux_8/writeout[0]   |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_0/Mux_7/writeout[0]   |                                                   |                7 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_1/Mux_10/writeout[0]  |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_1/Mux_13/writeout[0]  |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_1/Mux_14/writeout[0]  |                                                   |                8 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_1/Mux_11/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_1/Mux_12/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_1/Mux_8/writeout[0]   |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_1/Mux_7/writeout[0]   |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_1/Mux_9/writeout[0]   |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_10/Mux_7/writeout[0]  |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_11/Mux_14/writeout[0] |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_11/Mux_12/writeout[0] |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_11/Mux_11/writeout[0] |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_11/Mux_10/writeout[0] |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_11/Mux_13/writeout[0] |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_164[0]    |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_146[0]    |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_161[0]    |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_172[0]    |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_110[0]    |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_109[0]    |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_113[0]    |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_108[0]    |                                                   |                7 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_115[0]    |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_116[0]    |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_105[0]    |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_120[0]    |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_119[0]    |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_127[0]    |                                                   |                7 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_131[0]    |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_138[0]    |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_142[0]    |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_135[0]    |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_102[0]    |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_149[0]    |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_153[0]    |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_163[0]    |                                                   |                8 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_168[0]    |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_170[0]    |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_174[0]    |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_121[0]    |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_104[0]    |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_117[0]    |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_128[0]    |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_137[0]    |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_150[0]    |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_152[0]    |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_159[0]    |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_165[0]    |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_132[0]    |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_106[0]    |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_124[0]    |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_171[0]    |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_175[0]    |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_176[0]    |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_179[0]    |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_181[0]    |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_139[0]    |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_154[0]    |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_160[0]    |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_182[0]    |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_130[0]    |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_126[0]    |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_141[0]    |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_143[0]    |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_148[0]    |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_157[0]    |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_15[0]     |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_26[0]     |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_33[0]     |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_30[0]     |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_83[0]     |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_25[0]     |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_34[0]     |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_13[0]     |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_17[0]     |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_78[0]     |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_87[0]     |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_183[0]    |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_21[0]     |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_185[0]    |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_12[0]     |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_20[0]     |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_91[0]     |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_24[0]     |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_29[0]     |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_3[0]      |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_32[0]     |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_35[0]     |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_2[0]      |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_16[0]     |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_36[0]     |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_39[0]     |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_10[0]     |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_186[0]    |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_40[0]     |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_38[0]     |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_41[0]     |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_37[0]     |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_42[0]     |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_73[0]     |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_28[0]     |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_27[0]     |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_11[0]     |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_31[0]     |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_43[0]     |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_44[0]     |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_19[0]     |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_45[0]     |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_46[0]     |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_49[0]     |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_14[0]     |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_4[0]      |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_95[0]     |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_18[0]     |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_22[0]     |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_23[0]     |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_47[0]     |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_48[0]     |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_63[0]     |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_67[0]     |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[0]_99[0]     |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_7[0]      |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_57[0]     |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/E[0]                      |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_60[0]     |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_52[0]     |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_56[0]     |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_59[0]     |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_53[0]     |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_50[0]     |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_5[0]      |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_54[0]     |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_51[0]     |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_58[0]     |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_63[0]     |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_9[0]      |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_62[0]     |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_8[0]      |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_6[0]      |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_55[0]     |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | Bregister_inst/register_inst/ByteMemo_reg[7]_61[0]     |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_11/Mux_9/writeout[0]  |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_11/Mux_7/writeout[0]  |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_11/Mux_8/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_12/Mux_11/writeout[0] |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_12/Mux_10/writeout[0] |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_12/Mux_12/writeout[0] |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_12/Mux_13/writeout[0] |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_12/Mux_14/writeout[0] |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_12/Mux_7/writeout[0]  |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_12/Mux_9/writeout[0]  |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_13/Mux_11/writeout[0] |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_13/Mux_12/writeout[0] |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_12/Mux_8/writeout[0]  |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_13/Mux_10/writeout[0] |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_10/Mux_8/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_10/Mux_9/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_9/Mux_8/writeout[0]   |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_9/Mux_7/writeout[0]   |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_9/Mux_9/writeout[0]   |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_13/Mux_7/writeout[0]  |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_13/Mux_14/writeout[0] |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_13/Mux_8/writeout[0]  |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_13/Mux_9/writeout[0]  |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_14/Mux_10/writeout[0] |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_14/Mux_13/writeout[0] |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_14/Mux_14/writeout[0] |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_14/Mux_11/writeout[0] |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_14/Mux_12/writeout[0] |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_14/Mux_9/writeout[0]  |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_14/Mux_7/writeout[0]  |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_14/Mux_8/writeout[0]  |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_15/Mux_11/writeout[0] |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_15/Mux_12/writeout[0] |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_15/Mux_13/writeout[0] |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_15/Mux_10/writeout[0] |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_15/Mux_9/writeout[0]  |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_15/Mux_7/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_15/Mux_8/writeout[0]  |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_15/Mux_14/writeout[0] |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_2/Mux_11/writeout[0]  |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_2/Mux_12/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_2/Mux_13/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_2/Mux_10/writeout[0]  |                                                   |                7 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_2/Mux_9/writeout[0]   |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_2/Mux_7/writeout[0]   |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_2/Mux_8/writeout[0]   |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_3/Mux_13/writeout[0]  |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_3/Mux_14/writeout[0]  |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_3/Mux_12/writeout[0]  |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_3/Mux_11/writeout[0]  |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_3/Mux_10/writeout[0]  |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_3/Mux_9/writeout[0]   |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_3/Mux_7/writeout[0]   |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_3/Mux_8/writeout[0]   |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_4/Mux_10/writeout[0]  |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_4/Mux_11/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_4/Mux_12/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_4/Mux_13/writeout[0]  |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_4/Mux_14/writeout[0]  |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_4/Mux_8/writeout[0]   |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_4/Mux_9/writeout[0]   |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_4/Mux_7/writeout[0]   |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_5/Mux_14/writeout[0]  |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_5/Mux_10/writeout[0]  |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_5/Mux_12/writeout[0]  |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_5/Mux_13/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_5/Mux_11/writeout[0]  |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_5/Mux_9/writeout[0]   |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_5/Mux_8/writeout[0]   |                                                   |                7 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_5/Mux_7/writeout[0]   |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_6/Mux_13/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_6/Mux_10/writeout[0]  |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_2/Mux_14/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_6/Mux_12/writeout[0]  |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_6/Mux_11/writeout[0]  |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_6/Mux_8/writeout[0]   |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_6/Mux_7/writeout[0]   |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_6/Mux_9/writeout[0]   |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_7/Mux_13/writeout[0]  |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_7/Mux_14/writeout[0]  |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_7/Mux_10/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_7/Mux_12/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_7/Mux_11/writeout[0]  |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_7/Mux_7/writeout[0]   |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_7/Mux_8/writeout[0]   |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_7/Mux_9/writeout[0]   |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_8/Mux_10/writeout[0]  |                                                   |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_8/Mux_13/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_8/Mux_12/writeout[0]  |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_8/Mux_14/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_8/Mux_11/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_8/Mux_9/writeout[0]   |                                                   |                3 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_8/Mux_7/writeout[0]   |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_8/Mux_8/writeout[0]   |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_9/Mux_11/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_9/Mux_10/writeout[0]  |                                                   |                5 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_9/Mux_12/writeout[0]  |                                                   |                2 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_9/Mux_13/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_9/Mux_14/writeout[0]  |                                                   |                4 |             16 |
+| ~Reg_b_BUFG[4]                                     |                                                        | Reg_b_BUFG[4]                                     |                6 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | RAM_inst/Mux256bit_inst/Mux16bit_6/Mux_14/writeout[0]  |                                                   |                4 |             16 |
+|  CLK3Hz_IBUF_BUFG                                  | PCregister_inst/write                                  |                                                   |                6 |             28 |
+| ~Reg_b_BUFG[3]                                     |                                                        | Reg_b_BUFG[3]                                     |               16 |             32 |
+|  CLK100MHz_IBUF_BUFG                               |                                                        | seg_led_inst/my_clock/divclk_reg                  |                8 |             62 |
+| ~Reg_b_BUFG[2]                                     |                                                        | Reg_b_BUFG[2]                                     |               27 |             64 |
+| ~Reg_b_BUFG[1]                                     |                                                        | Reg_b_BUFG[1]                                     |               35 |            128 |
+| ~writeout0_reg_i_2__0_n_0                          |                                                        | Bregister_inst/register_inst/ByteMemo_reg[7]_0[0] |               62 |            256 |
++----------------------------------------------------+--------------------------------------------------------+---------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,37 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 7755519ee1404798b67c6ccfa6c7a85a --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PCregister
+Compiling module xil_defaultlib.DMux
+Compiling module xil_defaultlib.DMux16bit
+Compiling module xil_defaultlib.DMux256bit
+Compiling module xil_defaultlib.ROM
+Compiling module xil_defaultlib.instruction_fetch
+Compiling module xil_defaultlib.instruction_decode
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.Aregister
+Compiling module xil_defaultlib.Bregister
+Compiling module xil_defaultlib.Mux
+Compiling module xil_defaultlib.Mux16bit
+Compiling module xil_defaultlib.Mux256bit
+Compiling module xil_defaultlib.register256_default
+Compiling module xil_defaultlib.RAM
+Compiling module xil_defaultlib.instruction_execute
+Compiling module xil_defaultlib.PCcontrol
+Compiling module xil_defaultlib.clock_division
+Compiling module xil_defaultlib.counter
+Compiling module xil_defaultlib.seg_sel_decoder
+Compiling module xil_defaultlib.seg_led_decoder
+Compiling module xil_defaultlib.seg_led
+Compiling module xil_defaultlib.computer
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
