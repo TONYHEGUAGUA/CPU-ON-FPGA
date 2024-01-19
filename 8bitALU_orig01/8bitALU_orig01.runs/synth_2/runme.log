@@ -1,0 +1,1284 @@
+
+*** Running vivado
+    with args -log computer.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source computer.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source computer.tcl -notrace
+Command: synth_design -top computer -part xc7a75tfgg484-2 -fanout_limit 400 -fsm_extraction one_hot -keep_equivalent_registers -resource_sharing off -no_lc -shreg_min_size 5
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a75t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11156 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 437.406 ; gain = 95.527
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'computer' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/computer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PCregister' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/PCregister.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PCregister' (1#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/PCregister.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction_fetch' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:24]
+INFO: [Synth 8-6157] synthesizing module 'DMux256bit' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux256bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DMux16bit' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux16bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DMux' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DMux' (2#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DMux16bit' (3#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux16bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DMux256bit' (4#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux256bit.v:23]
+WARNING: [Synth 8-3848] Net Memory[255] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[254] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[253] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[252] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[251] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[250] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[249] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[248] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[247] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[246] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[245] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[244] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[243] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[242] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[241] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[240] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[239] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[238] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[237] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[236] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[235] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[234] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[233] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[232] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[231] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[230] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[229] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[228] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[227] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[226] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[225] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[224] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[223] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[222] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[221] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[220] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[219] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[218] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[217] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[216] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[215] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[214] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[213] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[212] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[211] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[210] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[209] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[208] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[207] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[206] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[205] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[204] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[203] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[202] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[201] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[200] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[199] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[198] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[197] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[196] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[195] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[194] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[193] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[192] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[191] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[190] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[189] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[188] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[187] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[186] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[185] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[184] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[183] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[182] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[181] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[180] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[179] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[178] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[177] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[176] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[175] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[174] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[173] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[172] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[171] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[170] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[169] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[168] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[167] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[166] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[165] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[164] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[163] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[162] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[161] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[160] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[159] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[158] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[157] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[156] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (5#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_fetch' (6#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction_decode' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_decode.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_decode' (7#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_decode.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction_execute' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/adder.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (8#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/adder.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Aregister' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Aregister.v:23]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'register' (10#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Aregister' (11#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Aregister.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Bregister' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Bregister.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Bregister' (12#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Bregister.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/RAM.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Mux256bit' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux256bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux' (13#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux16bit' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux16bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux16bit' (14#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux16bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux256bit' (15#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux256bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'register256' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/register256.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'register256' (16#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/register256.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (17#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/RAM.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_execute' (18#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PCcontrol' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/PCcontrol.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'PCcontrol' (19#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/PCcontrol.v:24]
+INFO: [Synth 8-6157] synthesizing module 'seg_led' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_led.v:22]
+	Parameter DIVCLK_CNTMAX bound to: 49999 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clock_division' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/clock_division.v:23]
+	Parameter DIVCLK_CNTMAX bound to: 49999 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_division' (20#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/clock_division.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/counter.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (21#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/counter.v:22]
+INFO: [Synth 8-6157] synthesizing module 'seg_sel_decoder' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_sel_decoder.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_sel_decoder.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'seg_sel_decoder' (22#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_sel_decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seg_led_decoder' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_led_decoder.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_led_decoder.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'seg_led_decoder' (23#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_led_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seg_led' (24#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_led.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'computer' (25#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/computer.v:23]
+WARNING: [Synth 8-3331] design computer has unconnected port CLK3Hz
+WARNING: [Synth 8-3331] design computer has unconnected port ina[3]
+WARNING: [Synth 8-3331] design computer has unconnected port ina[2]
+WARNING: [Synth 8-3331] design computer has unconnected port ina[1]
+WARNING: [Synth 8-3331] design computer has unconnected port inb[3]
+WARNING: [Synth 8-3331] design computer has unconnected port inb[2]
+WARNING: [Synth 8-3331] design computer has unconnected port inb[1]
+WARNING: [Synth 8-3331] design computer has unconnected port inb[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 494.176 ; gain = 152.297
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[98][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[98][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[98][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[98][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 494.176 ; gain = 152.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 494.176 ; gain = 152.297
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a75tfgg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/constrs_1/new/const.xdc]
+Finished Parsing XDC File [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/constrs_1/new/const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/constrs_1/new/const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/computer_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/computer_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 866.480 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 866.480 ; gain = 524.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a75tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 866.480 ; gain = 524.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 866.480 ; gain = 524.602
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "divclk_reg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'Memoryout_reg' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux.v:30]
+WARNING: [Synth 8-327] inferring latch for variable 'writeout0_reg' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'writeout1_reg' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux.v:32]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 866.480 ; gain = 524.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 261   
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 513   
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 258   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module computer 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module PCregister 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module DMux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module instruction_fetch 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module instruction_decode 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+Module register 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module Bregister 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module PCcontrol 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clock_division 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module seg_sel_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module seg_led 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 180 (col length:80)
+BRAMs: 210 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "seg_led_inst/my_clock/cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "seg_led_inst/my_clock/divclk_reg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design computer has port Regout[7] driven by constant 0
+WARNING: [Synth 8-3331] design computer has unconnected port CLK3Hz
+WARNING: [Synth 8-3331] design computer has unconnected port ina[3]
+WARNING: [Synth 8-3331] design computer has unconnected port ina[2]
+WARNING: [Synth 8-3331] design computer has unconnected port ina[1]
+WARNING: [Synth 8-3331] design computer has unconnected port inb[3]
+WARNING: [Synth 8-3331] design computer has unconnected port inb[2]
+WARNING: [Synth 8-3331] design computer has unconnected port inb[1]
+WARNING: [Synth 8-3331] design computer has unconnected port inb[0]
+WARNING: [Synth 8-3332] Sequential element (DMux_0/Memoryout_reg[7]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_0/Memoryout_reg[6]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_0/Memoryout_reg[5]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_0/Memoryout_reg[4]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_0/Memoryout_reg[3]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_0/Memoryout_reg[2]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_0/Memoryout_reg[1]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_0/Memoryout_reg[0]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_1/Memoryout_reg[7]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_1/Memoryout_reg[6]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_1/Memoryout_reg[5]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_1/Memoryout_reg[4]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_1/Memoryout_reg[3]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_1/Memoryout_reg[2]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_1/Memoryout_reg[1]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_1/Memoryout_reg[0]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_2/Memoryout_reg[7]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_2/Memoryout_reg[6]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_2/Memoryout_reg[5]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_2/Memoryout_reg[4]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_2/Memoryout_reg[3]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_2/Memoryout_reg[2]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_2/Memoryout_reg[1]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_2/Memoryout_reg[0]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_3/Memoryout_reg[7]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_3/Memoryout_reg[6]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_3/Memoryout_reg[5]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_3/Memoryout_reg[4]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_3/Memoryout_reg[3]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_3/Memoryout_reg[2]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_3/Memoryout_reg[1]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_3/Memoryout_reg[0]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_4/Memoryout_reg[7]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_4/Memoryout_reg[6]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_4/Memoryout_reg[5]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_4/Memoryout_reg[4]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_4/Memoryout_reg[3]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_4/Memoryout_reg[2]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_4/Memoryout_reg[1]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_4/Memoryout_reg[0]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_5/Memoryout_reg[7]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_5/Memoryout_reg[6]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_5/Memoryout_reg[5]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_5/Memoryout_reg[4]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_5/Memoryout_reg[3]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_5/Memoryout_reg[2]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_5/Memoryout_reg[1]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_5/Memoryout_reg[0]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_6/Memoryout_reg[7]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_6/Memoryout_reg[6]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_6/Memoryout_reg[5]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_6/Memoryout_reg[4]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_6/Memoryout_reg[3]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_6/Memoryout_reg[2]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_6/Memoryout_reg[1]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_6/Memoryout_reg[0]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_7/Memoryout_reg[7]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_7/Memoryout_reg[6]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_7/Memoryout_reg[5]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_7/Memoryout_reg[4]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_7/Memoryout_reg[3]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_7/Memoryout_reg[2]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_7/Memoryout_reg[1]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_7/Memoryout_reg[0]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_8/Memoryout_reg[7]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_8/Memoryout_reg[6]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_8/Memoryout_reg[5]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_8/Memoryout_reg[4]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_8/Memoryout_reg[3]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_8/Memoryout_reg[2]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_8/Memoryout_reg[1]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_8/Memoryout_reg[0]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_9/Memoryout_reg[7]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_9/Memoryout_reg[6]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_9/Memoryout_reg[5]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_9/Memoryout_reg[4]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_9/Memoryout_reg[3]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_9/Memoryout_reg[2]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_9/Memoryout_reg[1]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_9/Memoryout_reg[0]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_10/Memoryout_reg[7]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_10/Memoryout_reg[6]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_10/Memoryout_reg[5]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_10/Memoryout_reg[4]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_10/Memoryout_reg[3]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_10/Memoryout_reg[2]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_10/Memoryout_reg[1]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_10/Memoryout_reg[0]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_11/Memoryout_reg[7]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_11/Memoryout_reg[6]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_11/Memoryout_reg[5]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_11/Memoryout_reg[4]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_11/Memoryout_reg[3]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_11/Memoryout_reg[2]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_11/Memoryout_reg[1]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_11/Memoryout_reg[0]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_12/Memoryout_reg[7]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_12/Memoryout_reg[6]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_12/Memoryout_reg[5]) is unused and will be removed from module DMux16bit.
+WARNING: [Synth 8-3332] Sequential element (DMux_12/Memoryout_reg[4]) is unused and will be removed from module DMux16bit.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 866.480 ; gain = 524.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:10 . Memory (MB): peak = 866.480 ; gain = 524.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:10 . Memory (MB): peak = 866.480 ; gain = 524.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:01:12 . Memory (MB): peak = 879.742 ; gain = 537.863
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:14 . Memory (MB): peak = 879.742 ; gain = 537.863
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:14 . Memory (MB): peak = 879.742 ; gain = 537.863
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 879.742 ; gain = 537.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 879.742 ; gain = 537.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 879.742 ; gain = 537.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 879.742 ; gain = 537.863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     9|
+|2     |CARRY4 |    10|
+|3     |LUT1   |    15|
+|4     |LUT2   |   151|
+|5     |LUT3   |   104|
+|6     |LUT4   |    62|
+|7     |LUT5   |    33|
+|8     |LUT6   |   608|
+|9     |MUXF7  |   273|
+|10    |MUXF8  |   136|
+|11    |FDRE   |  2153|
+|12    |FDSE   |     2|
+|13    |LDC    |   255|
+|14    |IBUF   |     5|
+|15    |OBUF   |    28|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+--------------------+------+
+|      |Instance                             |Module              |Cells |
++------+-------------------------------------+--------------------+------+
+|1     |top                                  |                    |  3844|
+|2     |  PCcontrol_inst                     |PCcontrol           |     3|
+|3     |  PCregister_inst                    |PCregister          |    41|
+|4     |  instruction_decode_inst            |instruction_decode  |    64|
+|5     |  instruction_execute_inst           |instruction_execute |  3608|
+|6     |    ALU_inst                         |ALU                 |     3|
+|7     |      adder_inst                     |adder               |     3|
+|8     |    Aregister_inst                   |Aregister           |    35|
+|9     |      register_inst                  |register_525        |    35|
+|10    |    Bregister_inst                   |Bregister           |   301|
+|11    |      register_inst                  |register_524        |   301|
+|12    |    RAM_inst                         |RAM                 |  3269|
+|13    |      Mux256bit_inst                 |Mux256bit           |   269|
+|14    |        Mux16bit_0                   |Mux16bit            |    22|
+|15    |          Mux_0                      |Mux_509             |     3|
+|16    |          Mux_1                      |Mux_510             |     3|
+|17    |          Mux_10                     |Mux_511             |     1|
+|18    |          Mux_11                     |Mux_512             |     1|
+|19    |          Mux_12                     |Mux_513             |     1|
+|20    |          Mux_13                     |Mux_514             |     1|
+|21    |          Mux_14                     |Mux_515             |     1|
+|22    |          Mux_2                      |Mux_516             |     1|
+|23    |          Mux_3                      |Mux_517             |     3|
+|24    |          Mux_4                      |Mux_518             |     1|
+|25    |          Mux_5                      |Mux_519             |     1|
+|26    |          Mux_6                      |Mux_520             |     1|
+|27    |          Mux_7                      |Mux_521             |     2|
+|28    |          Mux_8                      |Mux_522             |     1|
+|29    |          Mux_9                      |Mux_523             |     1|
+|30    |        Mux16bit_1                   |Mux16bit_255        |    15|
+|31    |          Mux_0                      |Mux_494             |     1|
+|32    |          Mux_1                      |Mux_495             |     1|
+|33    |          Mux_10                     |Mux_496             |     1|
+|34    |          Mux_11                     |Mux_497             |     1|
+|35    |          Mux_12                     |Mux_498             |     1|
+|36    |          Mux_13                     |Mux_499             |     1|
+|37    |          Mux_14                     |Mux_500             |     1|
+|38    |          Mux_2                      |Mux_501             |     1|
+|39    |          Mux_3                      |Mux_502             |     1|
+|40    |          Mux_4                      |Mux_503             |     1|
+|41    |          Mux_5                      |Mux_504             |     1|
+|42    |          Mux_6                      |Mux_505             |     1|
+|43    |          Mux_7                      |Mux_506             |     1|
+|44    |          Mux_8                      |Mux_507             |     1|
+|45    |          Mux_9                      |Mux_508             |     1|
+|46    |        Mux16bit_10                  |Mux16bit_256        |    15|
+|47    |          Mux_0                      |Mux_479             |     1|
+|48    |          Mux_1                      |Mux_480             |     1|
+|49    |          Mux_10                     |Mux_481             |     1|
+|50    |          Mux_11                     |Mux_482             |     1|
+|51    |          Mux_12                     |Mux_483             |     1|
+|52    |          Mux_13                     |Mux_484             |     1|
+|53    |          Mux_14                     |Mux_485             |     1|
+|54    |          Mux_2                      |Mux_486             |     1|
+|55    |          Mux_3                      |Mux_487             |     1|
+|56    |          Mux_4                      |Mux_488             |     1|
+|57    |          Mux_5                      |Mux_489             |     1|
+|58    |          Mux_6                      |Mux_490             |     1|
+|59    |          Mux_7                      |Mux_491             |     1|
+|60    |          Mux_8                      |Mux_492             |     1|
+|61    |          Mux_9                      |Mux_493             |     1|
+|62    |        Mux16bit_11                  |Mux16bit_257        |    15|
+|63    |          Mux_0                      |Mux_464             |     1|
+|64    |          Mux_1                      |Mux_465             |     1|
+|65    |          Mux_10                     |Mux_466             |     1|
+|66    |          Mux_11                     |Mux_467             |     1|
+|67    |          Mux_12                     |Mux_468             |     1|
+|68    |          Mux_13                     |Mux_469             |     1|
+|69    |          Mux_14                     |Mux_470             |     1|
+|70    |          Mux_2                      |Mux_471             |     1|
+|71    |          Mux_3                      |Mux_472             |     1|
+|72    |          Mux_4                      |Mux_473             |     1|
+|73    |          Mux_5                      |Mux_474             |     1|
+|74    |          Mux_6                      |Mux_475             |     1|
+|75    |          Mux_7                      |Mux_476             |     1|
+|76    |          Mux_8                      |Mux_477             |     1|
+|77    |          Mux_9                      |Mux_478             |     1|
+|78    |        Mux16bit_12                  |Mux16bit_258        |    15|
+|79    |          Mux_0                      |Mux_449             |     1|
+|80    |          Mux_1                      |Mux_450             |     1|
+|81    |          Mux_10                     |Mux_451             |     1|
+|82    |          Mux_11                     |Mux_452             |     1|
+|83    |          Mux_12                     |Mux_453             |     1|
+|84    |          Mux_13                     |Mux_454             |     1|
+|85    |          Mux_14                     |Mux_455             |     1|
+|86    |          Mux_2                      |Mux_456             |     1|
+|87    |          Mux_3                      |Mux_457             |     1|
+|88    |          Mux_4                      |Mux_458             |     1|
+|89    |          Mux_5                      |Mux_459             |     1|
+|90    |          Mux_6                      |Mux_460             |     1|
+|91    |          Mux_7                      |Mux_461             |     1|
+|92    |          Mux_8                      |Mux_462             |     1|
+|93    |          Mux_9                      |Mux_463             |     1|
+|94    |        Mux16bit_13                  |Mux16bit_259        |    15|
+|95    |          Mux_0                      |Mux_434             |     1|
+|96    |          Mux_1                      |Mux_435             |     1|
+|97    |          Mux_10                     |Mux_436             |     1|
+|98    |          Mux_11                     |Mux_437             |     1|
+|99    |          Mux_12                     |Mux_438             |     1|
+|100   |          Mux_13                     |Mux_439             |     1|
+|101   |          Mux_14                     |Mux_440             |     1|
+|102   |          Mux_2                      |Mux_441             |     1|
+|103   |          Mux_3                      |Mux_442             |     1|
+|104   |          Mux_4                      |Mux_443             |     1|
+|105   |          Mux_5                      |Mux_444             |     1|
+|106   |          Mux_6                      |Mux_445             |     1|
+|107   |          Mux_7                      |Mux_446             |     1|
+|108   |          Mux_8                      |Mux_447             |     1|
+|109   |          Mux_9                      |Mux_448             |     1|
+|110   |        Mux16bit_14                  |Mux16bit_260        |    15|
+|111   |          Mux_0                      |Mux_419             |     1|
+|112   |          Mux_1                      |Mux_420             |     1|
+|113   |          Mux_10                     |Mux_421             |     1|
+|114   |          Mux_11                     |Mux_422             |     1|
+|115   |          Mux_12                     |Mux_423             |     1|
+|116   |          Mux_13                     |Mux_424             |     1|
+|117   |          Mux_14                     |Mux_425             |     1|
+|118   |          Mux_2                      |Mux_426             |     1|
+|119   |          Mux_3                      |Mux_427             |     1|
+|120   |          Mux_4                      |Mux_428             |     1|
+|121   |          Mux_5                      |Mux_429             |     1|
+|122   |          Mux_6                      |Mux_430             |     1|
+|123   |          Mux_7                      |Mux_431             |     1|
+|124   |          Mux_8                      |Mux_432             |     1|
+|125   |          Mux_9                      |Mux_433             |     1|
+|126   |        Mux16bit_15                  |Mux16bit_261        |    15|
+|127   |          Mux_0                      |Mux_404             |     1|
+|128   |          Mux_1                      |Mux_405             |     1|
+|129   |          Mux_10                     |Mux_406             |     1|
+|130   |          Mux_11                     |Mux_407             |     1|
+|131   |          Mux_12                     |Mux_408             |     1|
+|132   |          Mux_13                     |Mux_409             |     1|
+|133   |          Mux_14                     |Mux_410             |     1|
+|134   |          Mux_2                      |Mux_411             |     1|
+|135   |          Mux_3                      |Mux_412             |     1|
+|136   |          Mux_4                      |Mux_413             |     1|
+|137   |          Mux_5                      |Mux_414             |     1|
+|138   |          Mux_6                      |Mux_415             |     1|
+|139   |          Mux_7                      |Mux_416             |     1|
+|140   |          Mux_8                      |Mux_417             |     1|
+|141   |          Mux_9                      |Mux_418             |     1|
+|142   |        Mux16bit_2                   |Mux16bit_262        |    15|
+|143   |          Mux_0                      |Mux_389             |     1|
+|144   |          Mux_1                      |Mux_390             |     1|
+|145   |          Mux_10                     |Mux_391             |     1|
+|146   |          Mux_11                     |Mux_392             |     1|
+|147   |          Mux_12                     |Mux_393             |     1|
+|148   |          Mux_13                     |Mux_394             |     1|
+|149   |          Mux_14                     |Mux_395             |     1|
+|150   |          Mux_2                      |Mux_396             |     1|
+|151   |          Mux_3                      |Mux_397             |     1|
+|152   |          Mux_4                      |Mux_398             |     1|
+|153   |          Mux_5                      |Mux_399             |     1|
+|154   |          Mux_6                      |Mux_400             |     1|
+|155   |          Mux_7                      |Mux_401             |     1|
+|156   |          Mux_8                      |Mux_402             |     1|
+|157   |          Mux_9                      |Mux_403             |     1|
+|158   |        Mux16bit_3                   |Mux16bit_263        |    15|
+|159   |          Mux_0                      |Mux_374             |     1|
+|160   |          Mux_1                      |Mux_375             |     1|
+|161   |          Mux_10                     |Mux_376             |     1|
+|162   |          Mux_11                     |Mux_377             |     1|
+|163   |          Mux_12                     |Mux_378             |     1|
+|164   |          Mux_13                     |Mux_379             |     1|
+|165   |          Mux_14                     |Mux_380             |     1|
+|166   |          Mux_2                      |Mux_381             |     1|
+|167   |          Mux_3                      |Mux_382             |     1|
+|168   |          Mux_4                      |Mux_383             |     1|
+|169   |          Mux_5                      |Mux_384             |     1|
+|170   |          Mux_6                      |Mux_385             |     1|
+|171   |          Mux_7                      |Mux_386             |     1|
+|172   |          Mux_8                      |Mux_387             |     1|
+|173   |          Mux_9                      |Mux_388             |     1|
+|174   |        Mux16bit_4                   |Mux16bit_264        |    15|
+|175   |          Mux_0                      |Mux_359             |     1|
+|176   |          Mux_1                      |Mux_360             |     1|
+|177   |          Mux_10                     |Mux_361             |     1|
+|178   |          Mux_11                     |Mux_362             |     1|
+|179   |          Mux_12                     |Mux_363             |     1|
+|180   |          Mux_13                     |Mux_364             |     1|
+|181   |          Mux_14                     |Mux_365             |     1|
+|182   |          Mux_2                      |Mux_366             |     1|
+|183   |          Mux_3                      |Mux_367             |     1|
+|184   |          Mux_4                      |Mux_368             |     1|
+|185   |          Mux_5                      |Mux_369             |     1|
+|186   |          Mux_6                      |Mux_370             |     1|
+|187   |          Mux_7                      |Mux_371             |     1|
+|188   |          Mux_8                      |Mux_372             |     1|
+|189   |          Mux_9                      |Mux_373             |     1|
+|190   |        Mux16bit_5                   |Mux16bit_265        |    15|
+|191   |          Mux_0                      |Mux_344             |     1|
+|192   |          Mux_1                      |Mux_345             |     1|
+|193   |          Mux_10                     |Mux_346             |     1|
+|194   |          Mux_11                     |Mux_347             |     1|
+|195   |          Mux_12                     |Mux_348             |     1|
+|196   |          Mux_13                     |Mux_349             |     1|
+|197   |          Mux_14                     |Mux_350             |     1|
+|198   |          Mux_2                      |Mux_351             |     1|
+|199   |          Mux_3                      |Mux_352             |     1|
+|200   |          Mux_4                      |Mux_353             |     1|
+|201   |          Mux_5                      |Mux_354             |     1|
+|202   |          Mux_6                      |Mux_355             |     1|
+|203   |          Mux_7                      |Mux_356             |     1|
+|204   |          Mux_8                      |Mux_357             |     1|
+|205   |          Mux_9                      |Mux_358             |     1|
+|206   |        Mux16bit_6                   |Mux16bit_266        |    15|
+|207   |          Mux_0                      |Mux_329             |     1|
+|208   |          Mux_1                      |Mux_330             |     1|
+|209   |          Mux_10                     |Mux_331             |     1|
+|210   |          Mux_11                     |Mux_332             |     1|
+|211   |          Mux_12                     |Mux_333             |     1|
+|212   |          Mux_13                     |Mux_334             |     1|
+|213   |          Mux_14                     |Mux_335             |     1|
+|214   |          Mux_2                      |Mux_336             |     1|
+|215   |          Mux_3                      |Mux_337             |     1|
+|216   |          Mux_4                      |Mux_338             |     1|
+|217   |          Mux_5                      |Mux_339             |     1|
+|218   |          Mux_6                      |Mux_340             |     1|
+|219   |          Mux_7                      |Mux_341             |     1|
+|220   |          Mux_8                      |Mux_342             |     1|
+|221   |          Mux_9                      |Mux_343             |     1|
+|222   |        Mux16bit_7                   |Mux16bit_267        |    15|
+|223   |          Mux_0                      |Mux_314             |     1|
+|224   |          Mux_1                      |Mux_315             |     1|
+|225   |          Mux_10                     |Mux_316             |     1|
+|226   |          Mux_11                     |Mux_317             |     1|
+|227   |          Mux_12                     |Mux_318             |     1|
+|228   |          Mux_13                     |Mux_319             |     1|
+|229   |          Mux_14                     |Mux_320             |     1|
+|230   |          Mux_2                      |Mux_321             |     1|
+|231   |          Mux_3                      |Mux_322             |     1|
+|232   |          Mux_4                      |Mux_323             |     1|
+|233   |          Mux_5                      |Mux_324             |     1|
+|234   |          Mux_6                      |Mux_325             |     1|
+|235   |          Mux_7                      |Mux_326             |     1|
+|236   |          Mux_8                      |Mux_327             |     1|
+|237   |          Mux_9                      |Mux_328             |     1|
+|238   |        Mux16bit_8                   |Mux16bit_268        |    15|
+|239   |          Mux_0                      |Mux_299             |     1|
+|240   |          Mux_1                      |Mux_300             |     1|
+|241   |          Mux_10                     |Mux_301             |     1|
+|242   |          Mux_11                     |Mux_302             |     1|
+|243   |          Mux_12                     |Mux_303             |     1|
+|244   |          Mux_13                     |Mux_304             |     1|
+|245   |          Mux_14                     |Mux_305             |     1|
+|246   |          Mux_2                      |Mux_306             |     1|
+|247   |          Mux_3                      |Mux_307             |     1|
+|248   |          Mux_4                      |Mux_308             |     1|
+|249   |          Mux_5                      |Mux_309             |     1|
+|250   |          Mux_6                      |Mux_310             |     1|
+|251   |          Mux_7                      |Mux_311             |     1|
+|252   |          Mux_8                      |Mux_312             |     1|
+|253   |          Mux_9                      |Mux_313             |     1|
+|254   |        Mux16bit_9                   |Mux16bit_269        |    15|
+|255   |          Mux_0                      |Mux_284             |     1|
+|256   |          Mux_1                      |Mux_285             |     1|
+|257   |          Mux_10                     |Mux_286             |     1|
+|258   |          Mux_11                     |Mux_287             |     1|
+|259   |          Mux_12                     |Mux_288             |     1|
+|260   |          Mux_13                     |Mux_289             |     1|
+|261   |          Mux_14                     |Mux_290             |     1|
+|262   |          Mux_2                      |Mux_291             |     1|
+|263   |          Mux_3                      |Mux_292             |     1|
+|264   |          Mux_4                      |Mux_293             |     1|
+|265   |          Mux_5                      |Mux_294             |     1|
+|266   |          Mux_6                      |Mux_295             |     1|
+|267   |          Mux_7                      |Mux_296             |     1|
+|268   |          Mux_8                      |Mux_297             |     1|
+|269   |          Mux_9                      |Mux_298             |     1|
+|270   |        Mux_0                        |Mux                 |     2|
+|271   |        Mux_1                        |Mux_270             |     3|
+|272   |        Mux_10                       |Mux_271             |     1|
+|273   |        Mux_11                       |Mux_272             |     1|
+|274   |        Mux_12                       |Mux_273             |     1|
+|275   |        Mux_13                       |Mux_274             |     1|
+|276   |        Mux_14                       |Mux_275             |     1|
+|277   |        Mux_2                        |Mux_276             |     1|
+|278   |        Mux_3                        |Mux_277             |     3|
+|279   |        Mux_4                        |Mux_278             |     1|
+|280   |        Mux_5                        |Mux_279             |     1|
+|281   |        Mux_6                        |Mux_280             |     1|
+|282   |        Mux_7                        |Mux_281             |     3|
+|283   |        Mux_8                        |Mux_282             |     1|
+|284   |        Mux_9                        |Mux_283             |     1|
+|285   |      register256_inst               |register256         |  3000|
+|286   |        \genblk1[0].register_inst    |register            |     8|
+|287   |        \genblk1[100].register_inst  |register_0          |     8|
+|288   |        \genblk1[101].register_inst  |register_1          |     8|
+|289   |        \genblk1[102].register_inst  |register_2          |     8|
+|290   |        \genblk1[103].register_inst  |register_3          |    16|
+|291   |        \genblk1[104].register_inst  |register_4          |     8|
+|292   |        \genblk1[105].register_inst  |register_5          |     8|
+|293   |        \genblk1[106].register_inst  |register_6          |     8|
+|294   |        \genblk1[107].register_inst  |register_7          |    24|
+|295   |        \genblk1[108].register_inst  |register_8          |     8|
+|296   |        \genblk1[109].register_inst  |register_9          |     8|
+|297   |        \genblk1[10].register_inst   |register_10         |     8|
+|298   |        \genblk1[110].register_inst  |register_11         |     8|
+|299   |        \genblk1[111].register_inst  |register_12         |    16|
+|300   |        \genblk1[112].register_inst  |register_13         |     8|
+|301   |        \genblk1[113].register_inst  |register_14         |     8|
+|302   |        \genblk1[114].register_inst  |register_15         |     8|
+|303   |        \genblk1[115].register_inst  |register_16         |    40|
+|304   |        \genblk1[116].register_inst  |register_17         |     8|
+|305   |        \genblk1[117].register_inst  |register_18         |     8|
+|306   |        \genblk1[118].register_inst  |register_19         |     8|
+|307   |        \genblk1[119].register_inst  |register_20         |    16|
+|308   |        \genblk1[11].register_inst   |register_21         |    24|
+|309   |        \genblk1[120].register_inst  |register_22         |     8|
+|310   |        \genblk1[121].register_inst  |register_23         |     8|
+|311   |        \genblk1[122].register_inst  |register_24         |     8|
+|312   |        \genblk1[123].register_inst  |register_25         |    24|
+|313   |        \genblk1[124].register_inst  |register_26         |     8|
+|314   |        \genblk1[125].register_inst  |register_27         |     8|
+|315   |        \genblk1[126].register_inst  |register_28         |     8|
+|316   |        \genblk1[127].register_inst  |register_29         |    16|
+|317   |        \genblk1[128].register_inst  |register_30         |     8|
+|318   |        \genblk1[129].register_inst  |register_31         |     8|
+|319   |        \genblk1[12].register_inst   |register_32         |     8|
+|320   |        \genblk1[130].register_inst  |register_33         |     8|
+|321   |        \genblk1[131].register_inst  |register_34         |    32|
+|322   |        \genblk1[132].register_inst  |register_35         |     8|
+|323   |        \genblk1[133].register_inst  |register_36         |     8|
+|324   |        \genblk1[134].register_inst  |register_37         |     8|
+|325   |        \genblk1[135].register_inst  |register_38         |    16|
+|326   |        \genblk1[136].register_inst  |register_39         |     8|
+|327   |        \genblk1[137].register_inst  |register_40         |     8|
+|328   |        \genblk1[138].register_inst  |register_41         |     8|
+|329   |        \genblk1[139].register_inst  |register_42         |    24|
+|330   |        \genblk1[13].register_inst   |register_43         |     8|
+|331   |        \genblk1[140].register_inst  |register_44         |     8|
+|332   |        \genblk1[141].register_inst  |register_45         |     8|
+|333   |        \genblk1[142].register_inst  |register_46         |     8|
+|334   |        \genblk1[143].register_inst  |register_47         |    16|
+|335   |        \genblk1[144].register_inst  |register_48         |     8|
+|336   |        \genblk1[145].register_inst  |register_49         |     8|
+|337   |        \genblk1[146].register_inst  |register_50         |     8|
+|338   |        \genblk1[147].register_inst  |register_51         |    32|
+|339   |        \genblk1[148].register_inst  |register_52         |     8|
+|340   |        \genblk1[149].register_inst  |register_53         |     8|
+|341   |        \genblk1[14].register_inst   |register_54         |     8|
+|342   |        \genblk1[150].register_inst  |register_55         |     8|
+|343   |        \genblk1[151].register_inst  |register_56         |    16|
+|344   |        \genblk1[152].register_inst  |register_57         |     8|
+|345   |        \genblk1[153].register_inst  |register_58         |     8|
+|346   |        \genblk1[154].register_inst  |register_59         |     8|
+|347   |        \genblk1[155].register_inst  |register_60         |    24|
+|348   |        \genblk1[156].register_inst  |register_61         |     8|
+|349   |        \genblk1[157].register_inst  |register_62         |     8|
+|350   |        \genblk1[158].register_inst  |register_63         |     8|
+|351   |        \genblk1[159].register_inst  |register_64         |    16|
+|352   |        \genblk1[15].register_inst   |register_65         |    16|
+|353   |        \genblk1[160].register_inst  |register_66         |     8|
+|354   |        \genblk1[161].register_inst  |register_67         |     8|
+|355   |        \genblk1[162].register_inst  |register_68         |     8|
+|356   |        \genblk1[163].register_inst  |register_69         |    32|
+|357   |        \genblk1[164].register_inst  |register_70         |     8|
+|358   |        \genblk1[165].register_inst  |register_71         |     8|
+|359   |        \genblk1[166].register_inst  |register_72         |     8|
+|360   |        \genblk1[167].register_inst  |register_73         |    16|
+|361   |        \genblk1[168].register_inst  |register_74         |     8|
+|362   |        \genblk1[169].register_inst  |register_75         |     8|
+|363   |        \genblk1[16].register_inst   |register_76         |     8|
+|364   |        \genblk1[170].register_inst  |register_77         |     8|
+|365   |        \genblk1[171].register_inst  |register_78         |    24|
+|366   |        \genblk1[172].register_inst  |register_79         |     8|
+|367   |        \genblk1[173].register_inst  |register_80         |     8|
+|368   |        \genblk1[174].register_inst  |register_81         |     8|
+|369   |        \genblk1[175].register_inst  |register_82         |    16|
+|370   |        \genblk1[176].register_inst  |register_83         |     8|
+|371   |        \genblk1[177].register_inst  |register_84         |     8|
+|372   |        \genblk1[178].register_inst  |register_85         |     8|
+|373   |        \genblk1[179].register_inst  |register_86         |    48|
+|374   |        \genblk1[17].register_inst   |register_87         |     8|
+|375   |        \genblk1[180].register_inst  |register_88         |     8|
+|376   |        \genblk1[181].register_inst  |register_89         |     8|
+|377   |        \genblk1[182].register_inst  |register_90         |     8|
+|378   |        \genblk1[183].register_inst  |register_91         |    16|
+|379   |        \genblk1[184].register_inst  |register_92         |     8|
+|380   |        \genblk1[185].register_inst  |register_93         |     8|
+|381   |        \genblk1[186].register_inst  |register_94         |     8|
+|382   |        \genblk1[187].register_inst  |register_95         |    24|
+|383   |        \genblk1[188].register_inst  |register_96         |     8|
+|384   |        \genblk1[189].register_inst  |register_97         |     8|
+|385   |        \genblk1[18].register_inst   |register_98         |     8|
+|386   |        \genblk1[190].register_inst  |register_99         |     8|
+|387   |        \genblk1[191].register_inst  |register_100        |    16|
+|388   |        \genblk1[192].register_inst  |register_101        |     8|
+|389   |        \genblk1[193].register_inst  |register_102        |     8|
+|390   |        \genblk1[194].register_inst  |register_103        |     8|
+|391   |        \genblk1[195].register_inst  |register_104        |    32|
+|392   |        \genblk1[196].register_inst  |register_105        |     8|
+|393   |        \genblk1[197].register_inst  |register_106        |     8|
+|394   |        \genblk1[198].register_inst  |register_107        |     8|
+|395   |        \genblk1[199].register_inst  |register_108        |    16|
+|396   |        \genblk1[19].register_inst   |register_109        |    32|
+|397   |        \genblk1[1].register_inst    |register_110        |     8|
+|398   |        \genblk1[200].register_inst  |register_111        |     8|
+|399   |        \genblk1[201].register_inst  |register_112        |     8|
+|400   |        \genblk1[202].register_inst  |register_113        |     8|
+|401   |        \genblk1[203].register_inst  |register_114        |    24|
+|402   |        \genblk1[204].register_inst  |register_115        |     8|
+|403   |        \genblk1[205].register_inst  |register_116        |     8|
+|404   |        \genblk1[206].register_inst  |register_117        |     8|
+|405   |        \genblk1[207].register_inst  |register_118        |    16|
+|406   |        \genblk1[208].register_inst  |register_119        |     8|
+|407   |        \genblk1[209].register_inst  |register_120        |     8|
+|408   |        \genblk1[20].register_inst   |register_121        |     8|
+|409   |        \genblk1[210].register_inst  |register_122        |     8|
+|410   |        \genblk1[211].register_inst  |register_123        |    32|
+|411   |        \genblk1[212].register_inst  |register_124        |     8|
+|412   |        \genblk1[213].register_inst  |register_125        |     8|
+|413   |        \genblk1[214].register_inst  |register_126        |     8|
+|414   |        \genblk1[215].register_inst  |register_127        |    16|
+|415   |        \genblk1[216].register_inst  |register_128        |     8|
+|416   |        \genblk1[217].register_inst  |register_129        |     8|
+|417   |        \genblk1[218].register_inst  |register_130        |     8|
+|418   |        \genblk1[219].register_inst  |register_131        |    24|
+|419   |        \genblk1[21].register_inst   |register_132        |     8|
+|420   |        \genblk1[220].register_inst  |register_133        |     8|
+|421   |        \genblk1[221].register_inst  |register_134        |     8|
+|422   |        \genblk1[222].register_inst  |register_135        |     8|
+|423   |        \genblk1[223].register_inst  |register_136        |    16|
+|424   |        \genblk1[224].register_inst  |register_137        |     8|
+|425   |        \genblk1[225].register_inst  |register_138        |     8|
+|426   |        \genblk1[226].register_inst  |register_139        |     8|
+|427   |        \genblk1[227].register_inst  |register_140        |    32|
+|428   |        \genblk1[228].register_inst  |register_141        |     8|
+|429   |        \genblk1[229].register_inst  |register_142        |     8|
+|430   |        \genblk1[22].register_inst   |register_143        |     8|
+|431   |        \genblk1[230].register_inst  |register_144        |     8|
+|432   |        \genblk1[231].register_inst  |register_145        |    16|
+|433   |        \genblk1[232].register_inst  |register_146        |     8|
+|434   |        \genblk1[233].register_inst  |register_147        |     8|
+|435   |        \genblk1[234].register_inst  |register_148        |     8|
+|436   |        \genblk1[235].register_inst  |register_149        |    24|
+|437   |        \genblk1[236].register_inst  |register_150        |     8|
+|438   |        \genblk1[237].register_inst  |register_151        |     8|
+|439   |        \genblk1[238].register_inst  |register_152        |     8|
+|440   |        \genblk1[239].register_inst  |register_153        |    16|
+|441   |        \genblk1[23].register_inst   |register_154        |    16|
+|442   |        \genblk1[240].register_inst  |register_155        |     8|
+|443   |        \genblk1[241].register_inst  |register_156        |     8|
+|444   |        \genblk1[242].register_inst  |register_157        |     8|
+|445   |        \genblk1[243].register_inst  |register_158        |    40|
+|446   |        \genblk1[244].register_inst  |register_159        |     8|
+|447   |        \genblk1[245].register_inst  |register_160        |     8|
+|448   |        \genblk1[246].register_inst  |register_161        |     8|
+|449   |        \genblk1[247].register_inst  |register_162        |    16|
+|450   |        \genblk1[248].register_inst  |register_163        |     8|
+|451   |        \genblk1[249].register_inst  |register_164        |     8|
+|452   |        \genblk1[24].register_inst   |register_165        |     8|
+|453   |        \genblk1[250].register_inst  |register_166        |     8|
+|454   |        \genblk1[251].register_inst  |register_167        |    24|
+|455   |        \genblk1[252].register_inst  |register_168        |     8|
+|456   |        \genblk1[253].register_inst  |register_169        |     8|
+|457   |        \genblk1[254].register_inst  |register_170        |     8|
+|458   |        \genblk1[255].register_inst  |register_171        |    16|
+|459   |        \genblk1[25].register_inst   |register_172        |     8|
+|460   |        \genblk1[26].register_inst   |register_173        |     8|
+|461   |        \genblk1[27].register_inst   |register_174        |    24|
+|462   |        \genblk1[28].register_inst   |register_175        |     8|
+|463   |        \genblk1[29].register_inst   |register_176        |     8|
+|464   |        \genblk1[2].register_inst    |register_177        |     8|
+|465   |        \genblk1[30].register_inst   |register_178        |     8|
+|466   |        \genblk1[31].register_inst   |register_179        |    16|
+|467   |        \genblk1[32].register_inst   |register_180        |     8|
+|468   |        \genblk1[33].register_inst   |register_181        |     8|
+|469   |        \genblk1[34].register_inst   |register_182        |     8|
+|470   |        \genblk1[35].register_inst   |register_183        |    32|
+|471   |        \genblk1[36].register_inst   |register_184        |     8|
+|472   |        \genblk1[37].register_inst   |register_185        |     8|
+|473   |        \genblk1[38].register_inst   |register_186        |     8|
+|474   |        \genblk1[39].register_inst   |register_187        |    16|
+|475   |        \genblk1[3].register_inst    |register_188        |    32|
+|476   |        \genblk1[40].register_inst   |register_189        |     8|
+|477   |        \genblk1[41].register_inst   |register_190        |     8|
+|478   |        \genblk1[42].register_inst   |register_191        |     8|
+|479   |        \genblk1[43].register_inst   |register_192        |    24|
+|480   |        \genblk1[44].register_inst   |register_193        |     8|
+|481   |        \genblk1[45].register_inst   |register_194        |     8|
+|482   |        \genblk1[46].register_inst   |register_195        |     8|
+|483   |        \genblk1[47].register_inst   |register_196        |    16|
+|484   |        \genblk1[48].register_inst   |register_197        |     8|
+|485   |        \genblk1[49].register_inst   |register_198        |     8|
+|486   |        \genblk1[4].register_inst    |register_199        |     8|
+|487   |        \genblk1[50].register_inst   |register_200        |     8|
+|488   |        \genblk1[51].register_inst   |register_201        |    56|
+|489   |        \genblk1[52].register_inst   |register_202        |     8|
+|490   |        \genblk1[53].register_inst   |register_203        |     8|
+|491   |        \genblk1[54].register_inst   |register_204        |     8|
+|492   |        \genblk1[55].register_inst   |register_205        |    16|
+|493   |        \genblk1[56].register_inst   |register_206        |     8|
+|494   |        \genblk1[57].register_inst   |register_207        |     8|
+|495   |        \genblk1[58].register_inst   |register_208        |     8|
+|496   |        \genblk1[59].register_inst   |register_209        |    24|
+|497   |        \genblk1[5].register_inst    |register_210        |     8|
+|498   |        \genblk1[60].register_inst   |register_211        |     8|
+|499   |        \genblk1[61].register_inst   |register_212        |     8|
+|500   |        \genblk1[62].register_inst   |register_213        |     8|
+|501   |        \genblk1[63].register_inst   |register_214        |    16|
+|502   |        \genblk1[64].register_inst   |register_215        |     8|
+|503   |        \genblk1[65].register_inst   |register_216        |     8|
+|504   |        \genblk1[66].register_inst   |register_217        |     8|
+|505   |        \genblk1[67].register_inst   |register_218        |    32|
+|506   |        \genblk1[68].register_inst   |register_219        |     8|
+|507   |        \genblk1[69].register_inst   |register_220        |     8|
+|508   |        \genblk1[6].register_inst    |register_221        |     8|
+|509   |        \genblk1[70].register_inst   |register_222        |     8|
+|510   |        \genblk1[71].register_inst   |register_223        |    16|
+|511   |        \genblk1[72].register_inst   |register_224        |     8|
+|512   |        \genblk1[73].register_inst   |register_225        |     8|
+|513   |        \genblk1[74].register_inst   |register_226        |     8|
+|514   |        \genblk1[75].register_inst   |register_227        |    24|
+|515   |        \genblk1[76].register_inst   |register_228        |     8|
+|516   |        \genblk1[77].register_inst   |register_229        |     8|
+|517   |        \genblk1[78].register_inst   |register_230        |     8|
+|518   |        \genblk1[79].register_inst   |register_231        |    16|
+|519   |        \genblk1[7].register_inst    |register_232        |    16|
+|520   |        \genblk1[80].register_inst   |register_233        |     8|
+|521   |        \genblk1[81].register_inst   |register_234        |     8|
+|522   |        \genblk1[82].register_inst   |register_235        |     8|
+|523   |        \genblk1[83].register_inst   |register_236        |    32|
+|524   |        \genblk1[84].register_inst   |register_237        |     8|
+|525   |        \genblk1[85].register_inst   |register_238        |     8|
+|526   |        \genblk1[86].register_inst   |register_239        |     8|
+|527   |        \genblk1[87].register_inst   |register_240        |    16|
+|528   |        \genblk1[88].register_inst   |register_241        |     8|
+|529   |        \genblk1[89].register_inst   |register_242        |     8|
+|530   |        \genblk1[8].register_inst    |register_243        |     8|
+|531   |        \genblk1[90].register_inst   |register_244        |     8|
+|532   |        \genblk1[91].register_inst   |register_245        |    24|
+|533   |        \genblk1[92].register_inst   |register_246        |     8|
+|534   |        \genblk1[93].register_inst   |register_247        |     8|
+|535   |        \genblk1[94].register_inst   |register_248        |     8|
+|536   |        \genblk1[95].register_inst   |register_249        |    16|
+|537   |        \genblk1[96].register_inst   |register_250        |     8|
+|538   |        \genblk1[97].register_inst   |register_251        |     8|
+|539   |        \genblk1[98].register_inst   |register_252        |     8|
+|540   |        \genblk1[99].register_inst   |register_253        |    32|
+|541   |        \genblk1[9].register_inst    |register_254        |     8|
+|542   |  instruction_fetch_inst             |instruction_fetch   |    25|
+|543   |    ROM_inst                         |ROM                 |    14|
+|544   |      DMux256bit_inst                |DMux256bit          |    14|
+|545   |  seg_led_inst                       |seg_led             |    60|
+|546   |    counter                          |counter             |     8|
+|547   |    my_clock                         |clock_division      |    52|
++------+-------------------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 879.742 ; gain = 537.863
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 387 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 879.742 ; gain = 165.559
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:16 . Memory (MB): peak = 879.742 ; gain = 537.863
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 679 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 8 inverter(s) to 255 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 255 instances were transformed.
+  LDC => LDCE (inverted pins: G): 255 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 320 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:01:20 . Memory (MB): peak = 879.953 ; gain = 550.918
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.runs/synth_2/computer.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file computer_utilization_synth.rpt -pb computer_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 879.953 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 17 00:55:32 2024...

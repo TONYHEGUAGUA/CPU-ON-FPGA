@@ -1,0 +1,38 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../8bitALU_orig01.srcs/sources_1/new/ALU.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/Aregister.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/Bregister.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/DMux.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/DMux16bit.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/Mux.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/Mux16bit.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/Mux256bit.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/PCcontrol.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/PCregister.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/adder.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/clock_division.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/counter.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/instruction_decode.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/instruction_execute.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/instruction_fetch.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/register.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/register256.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/seg_led.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/seg_led_decoder.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/seg_sel_decoder.v" \
+
+sv xil_defaultlib  \
+"../../../../8bitALU_orig01.srcs/sources_1/new/DMux256bit.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/RAM.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/ROM.v" \
+"../../../../8bitALU_orig01.srcs/sources_1/new/computer.v" \
+
+verilog xil_defaultlib  \
+"../../../../8bitALU_orig01.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
