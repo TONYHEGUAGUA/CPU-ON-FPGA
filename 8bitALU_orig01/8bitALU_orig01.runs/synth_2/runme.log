@@ -14,165 +14,165 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a75t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a75t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11156 
+INFO: Helper process launched with PID 24548 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 437.406 ; gain = 95.527
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 409.766 ; gain = 96.805
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'computer' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/computer.v:23]
-INFO: [Synth 8-6157] synthesizing module 'PCregister' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/PCregister.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'PCregister' (1#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/PCregister.v:23]
-INFO: [Synth 8-6157] synthesizing module 'instruction_fetch' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_fetch.v:23]
-INFO: [Synth 8-6157] synthesizing module 'ROM' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:24]
-INFO: [Synth 8-6157] synthesizing module 'DMux256bit' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux256bit.v:23]
-INFO: [Synth 8-6157] synthesizing module 'DMux16bit' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux16bit.v:23]
-INFO: [Synth 8-6157] synthesizing module 'DMux' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'DMux' (2#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'DMux16bit' (3#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux16bit.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'DMux256bit' (4#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux256bit.v:23]
-WARNING: [Synth 8-3848] Net Memory[255] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[254] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[253] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[252] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[251] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[250] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[249] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[248] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[247] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[246] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[245] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[244] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[243] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[242] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[241] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[240] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[239] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[238] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[237] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[236] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[235] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[234] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[233] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[232] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[231] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[230] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[229] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[228] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[227] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[226] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[225] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[224] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[223] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[222] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[221] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[220] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[219] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[218] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[217] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[216] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[215] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[214] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[213] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[212] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[211] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[210] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[209] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[208] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[207] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[206] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[205] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[204] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[203] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[202] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[201] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[200] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[199] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[198] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[197] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[196] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[195] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[194] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[193] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[192] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[191] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[190] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[189] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[188] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[187] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[186] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[185] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[184] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[183] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[182] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[181] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[180] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[179] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[178] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[177] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[176] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[175] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[174] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[173] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[172] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[171] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[170] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[169] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[168] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[167] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[166] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[165] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[164] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[163] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[162] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[161] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[160] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[159] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[158] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[157] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
-WARNING: [Synth 8-3848] Net Memory[156] in module/entity ROM does not have driver. [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+INFO: [Synth 8-6157] synthesizing module 'computer' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/computer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PCregister' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/PCregister.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PCregister' (1#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/PCregister.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction_fetch' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ROM' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:24]
+INFO: [Synth 8-6157] synthesizing module 'DMux256bit' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux256bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DMux16bit' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux16bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DMux' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DMux' (2#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DMux16bit' (3#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux16bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DMux256bit' (4#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux256bit.v:23]
+WARNING: [Synth 8-3848] Net Memory[255] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[254] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[253] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[252] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[251] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[250] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[249] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[248] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[247] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[246] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[245] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[244] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[243] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[242] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[241] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[240] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[239] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[238] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[237] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[236] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[235] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[234] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[233] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[232] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[231] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[230] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[229] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[228] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[227] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[226] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[225] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[224] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[223] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[222] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[221] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[220] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[219] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[218] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[217] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[216] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[215] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[214] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[213] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[212] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[211] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[210] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[209] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[208] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[207] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[206] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[205] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[204] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[203] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[202] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[201] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[200] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[199] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[198] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[197] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[196] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[195] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[194] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[193] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[192] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[191] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[190] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[189] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[188] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[187] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[186] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[185] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[184] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[183] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[182] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[181] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[180] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[179] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[178] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[177] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[176] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[175] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[174] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[173] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[172] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[171] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[170] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[169] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[168] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[167] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[166] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[165] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[164] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[163] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[162] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[161] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[160] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[159] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[158] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[157] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
+WARNING: [Synth 8-3848] Net Memory[156] in module/entity ROM does not have driver. [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:28]
 INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-6155] done synthesizing module 'ROM' (5#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:24]
-INFO: [Synth 8-6155] done synthesizing module 'instruction_fetch' (6#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_fetch.v:23]
-INFO: [Synth 8-6157] synthesizing module 'instruction_decode' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_decode.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'instruction_decode' (7#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_decode.v:23]
-INFO: [Synth 8-6157] synthesizing module 'instruction_execute' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_execute.v:23]
-INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ALU.v:23]
-INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/adder.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'adder' (8#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/adder.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ALU.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Aregister' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Aregister.v:23]
-INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/register.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'register' (10#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/register.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Aregister' (11#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Aregister.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Bregister' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Bregister.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Bregister' (12#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Bregister.v:23]
-INFO: [Synth 8-6157] synthesizing module 'RAM' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/RAM.v:21]
-INFO: [Synth 8-6157] synthesizing module 'Mux256bit' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux256bit.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Mux' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Mux' (13#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Mux16bit' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux16bit.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Mux16bit' (14#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux16bit.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Mux256bit' (15#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux256bit.v:23]
-INFO: [Synth 8-6157] synthesizing module 'register256' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/register256.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'register256' (16#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/register256.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'RAM' (17#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/RAM.v:21]
-INFO: [Synth 8-6155] done synthesizing module 'instruction_execute' (18#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_execute.v:23]
-INFO: [Synth 8-6157] synthesizing module 'PCcontrol' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/PCcontrol.v:24]
-INFO: [Synth 8-6155] done synthesizing module 'PCcontrol' (19#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/PCcontrol.v:24]
-INFO: [Synth 8-6157] synthesizing module 'seg_led' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_led.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ROM' (5#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_fetch' (6#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_fetch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction_decode' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_decode.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_decode' (7#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_decode.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction_execute' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'adder' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/adder.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (8#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/adder.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (9#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Aregister' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Aregister.v:23]
+INFO: [Synth 8-6157] synthesizing module 'register' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'register' (10#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/register.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Aregister' (11#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Aregister.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Bregister' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Bregister.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Bregister' (12#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Bregister.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/RAM.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Mux256bit' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux256bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux' (13#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mux16bit' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux16bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux16bit' (14#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux16bit.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux256bit' (15#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux256bit.v:23]
+INFO: [Synth 8-6157] synthesizing module 'register256' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/register256.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'register256' (16#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/register256.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (17#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/RAM.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_execute' (18#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_execute.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PCcontrol' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/PCcontrol.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'PCcontrol' (19#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/PCcontrol.v:24]
+INFO: [Synth 8-6157] synthesizing module 'seg_led' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_led.v:22]
 	Parameter DIVCLK_CNTMAX bound to: 49999 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'clock_division' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/clock_division.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_division' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/clock_division.v:23]
 	Parameter DIVCLK_CNTMAX bound to: 49999 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'clock_division' (20#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/clock_division.v:23]
-INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/counter.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'counter' (21#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/counter.v:22]
-INFO: [Synth 8-6157] synthesizing module 'seg_sel_decoder' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_sel_decoder.v:23]
-INFO: [Synth 8-226] default block is never used [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_sel_decoder.v:27]
-INFO: [Synth 8-6155] done synthesizing module 'seg_sel_decoder' (22#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_sel_decoder.v:23]
-INFO: [Synth 8-6157] synthesizing module 'seg_led_decoder' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_led_decoder.v:23]
-INFO: [Synth 8-226] default block is never used [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_led_decoder.v:27]
-INFO: [Synth 8-6155] done synthesizing module 'seg_led_decoder' (23#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_led_decoder.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'seg_led' (24#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_led.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'computer' (25#1) [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/computer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_division' (20#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/clock_division.v:23]
+INFO: [Synth 8-6157] synthesizing module 'counter' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/counter.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (21#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/counter.v:22]
+INFO: [Synth 8-6157] synthesizing module 'seg_sel_decoder' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_sel_decoder.v:23]
+INFO: [Synth 8-226] default block is never used [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_sel_decoder.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'seg_sel_decoder' (22#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_sel_decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seg_led_decoder' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_led_decoder.v:23]
+INFO: [Synth 8-226] default block is never used [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_led_decoder.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'seg_led_decoder' (23#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_led_decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'seg_led' (24#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/seg_led.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'computer' (25#1) [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/computer.v:23]
 WARNING: [Synth 8-3331] design computer has unconnected port CLK3Hz
 WARNING: [Synth 8-3331] design computer has unconnected port ina[3]
 WARNING: [Synth 8-3331] design computer has unconnected port ina[2]
@@ -182,7 +182,7 @@ WARNING: [Synth 8-3331] design computer has unconnected port inb[2]
 WARNING: [Synth 8-3331] design computer has unconnected port inb[1]
 WARNING: [Synth 8-3331] design computer has unconnected port inb[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 494.176 ; gain = 152.297
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 465.684 ; gain = 152.723
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -191,154 +191,154 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][3] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][2] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][1] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][0] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[98][7] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[98][6] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[98][5] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
-WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[98][4] to constant 0 [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][7] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][6] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][5] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][4] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][3] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][2] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][1] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[86][0] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][7] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][6] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][5] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][4] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][3] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][2] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][1] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[87][0] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][7] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][6] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][5] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][4] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][3] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][2] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][1] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[88][0] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][7] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][6] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][5] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][4] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][3] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][2] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][1] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[89][0] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][7] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][6] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][5] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][4] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][3] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][2] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][1] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[90][0] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][7] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][6] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][5] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][4] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][3] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][2] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][1] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[91][0] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][7] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][6] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][5] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][4] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][3] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][2] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][1] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[92][0] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][7] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][6] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][5] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][4] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][3] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][2] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][1] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[93][0] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][7] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][6] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][5] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][4] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][3] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][2] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][1] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[94][0] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][7] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][6] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][5] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][4] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][3] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][2] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][1] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[95][0] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][7] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][6] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][5] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][4] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][3] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][2] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][1] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[96][0] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][7] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][6] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][5] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][4] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][3] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][2] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][1] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[97][0] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[98][7] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[98][6] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[98][5] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
+WARNING: [Synth 8-3295] tying undriven pin DMux256bit_inst:Memory[98][4] to constant 0 [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/ROM.v:121]
 INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 494.176 ; gain = 152.297
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 465.684 ; gain = 152.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 494.176 ; gain = 152.297
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 465.684 ; gain = 152.723
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a75tfgg484-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/constrs_1/new/const.xdc]
-Finished Parsing XDC File [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/constrs_1/new/const.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/constrs_1/new/const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/computer_propImpl.xdc].
+Parsing XDC File [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/constrs_1/new/const.xdc]
+Finished Parsing XDC File [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/constrs_1/new/const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/constrs_1/new/const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/computer_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/computer_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 866.480 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 834.016 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 866.480 ; gain = 524.602
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 834.016 ; gain = 521.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a75tfgg484-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 866.480 ; gain = 524.602
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 834.016 ; gain = 521.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 866.480 ; gain = 524.602
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 834.016 ; gain = 521.055
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "cnt" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "divclk_reg" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-327] inferring latch for variable 'Memoryout_reg' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux.v:30]
-WARNING: [Synth 8-327] inferring latch for variable 'writeout0_reg' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux.v:31]
-WARNING: [Synth 8-327] inferring latch for variable 'writeout1_reg' [C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'Memoryout_reg' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/DMux.v:30]
+WARNING: [Synth 8-327] inferring latch for variable 'writeout0_reg' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux.v:31]
+WARNING: [Synth 8-327] inferring latch for variable 'writeout1_reg' [E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/Mux.v:32]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 866.480 ; gain = 524.602
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 834.016 ; gain = 521.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -576,7 +576,7 @@ WARNING: [Synth 8-3332] Sequential element (DMux_12/Memoryout_reg[5]) is unused 
 WARNING: [Synth 8-3332] Sequential element (DMux_12/Memoryout_reg[4]) is unused and will be removed from module DMux16bit.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 866.480 ; gain = 524.602
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 834.016 ; gain = 521.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -588,13 +588,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:10 . Memory (MB): peak = 866.480 ; gain = 524.602
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 834.016 ; gain = 521.055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:10 . Memory (MB): peak = 866.480 ; gain = 524.602
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 834.016 ; gain = 521.055
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -606,7 +606,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:01:12 . Memory (MB): peak = 879.742 ; gain = 537.863
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 853.406 ; gain = 540.445
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -630,7 +630,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:14 . Memory (MB): peak = 879.742 ; gain = 537.863
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 853.406 ; gain = 540.445
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -643,7 +643,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:14 . Memory (MB): peak = 879.742 ; gain = 537.863
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 853.406 ; gain = 540.445
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -655,25 +655,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 879.742 ; gain = 537.863
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 853.406 ; gain = 540.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 879.742 ; gain = 537.863
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 853.406 ; gain = 540.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 879.742 ; gain = 537.863
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 853.406 ; gain = 540.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 879.742 ; gain = 537.863
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 853.406 ; gain = 540.445
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1259,14 +1259,14 @@ Report Instance Areas:
 |547   |    my_clock                         |clock_division      |    52|
 +------+-------------------------------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 879.742 ; gain = 537.863
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 853.406 ; gain = 540.445
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 387 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:01:01 . Memory (MB): peak = 879.742 ; gain = 165.559
-Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:16 . Memory (MB): peak = 879.742 ; gain = 537.863
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 853.406 ; gain = 172.113
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 853.406 ; gain = 540.445
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 679 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 8 inverter(s) to 255 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -1276,9 +1276,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 71 Infos, 320 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:01:20 . Memory (MB): peak = 879.953 ; gain = 550.918
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 853.406 ; gain = 553.508
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/huyan/Documents/8bitALU_orig01/8bitALU_orig01.runs/synth_2/computer.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'E:/29917/Documents/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.runs/synth_2/computer.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file computer_utilization_synth.rpt -pb computer_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 879.953 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 17 00:55:32 2024...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 853.406 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 25 16:21:17 2024...
