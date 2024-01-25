@@ -25,7 +25,7 @@
     input [3:0]ina,
     input [3:0]inb,
     input PROGRAM1,PROGRAM2,
-    output [7:0]ALUout,
+    output [7:0]seg,
     output [7:0]MRegout,
     output [7:0]Regout,
     output [3:0]Regsel
@@ -47,11 +47,12 @@
      wire [7:0]Reg_b;
      wire [7:0]RamM;
      reg Awrite,Bwrite,Mwrite,PCwrite;
-     wire [7:0]seg;//the output of ALU
+     wire [7:0]ALUout;//the output of ALU
      wire [7:0]instraddr;
      wire [7:0]instr,regBtransmit;
      wire [2:0]opcode;
      wire [1:0]jumpcode;
+     wire [0:2][7:0]ramdisplay;
      
      //confirm the instruction
      PCregister PCregister_inst(CLK,PCwrite,~PROGRAM1,~PROGRAM2,Reg_b,instraddr);
@@ -59,16 +60,15 @@
      
      instruction_decode instruction_decode_inst(CLK,instr,PCwrite,Awrite,Bwrite,Mwrite,opcode,jumpcode,regBtransmit);//control whether change RegB or execute ALU
      
-     instruction_execute instruction_execute_inst(CLK,opcode,Awrite,Bwrite,Mwrite,regBtransmit,PCwrite,Reg_a,Reg_b,RamM,seg);//refresh the registers and output the seg.
+     instruction_execute instruction_execute_inst(CLK,opcode,Awrite,Bwrite,Mwrite,regBtransmit,PCwrite,Reg_a,Reg_b,RamM,ALUout,ramdisplay);//refresh the registers and output the seg.
 
     
     //confirm PC counter's next step
-    PCcontrol PCcontrol_inst(CLK,jumpcode,seg,PCwrite);
+    PCcontrol PCcontrol_inst(CLK,jumpcode,ALUout,PCwrite);
     
-    assign ALUout = seg;
-    
-    assign MRegout = RamM;//Show regM
-    seg_led seg_led_inst(CLK100MHz,instraddr,Reg_b,Regsel,Regout);// Show regA and Reg_b
+    assign seg = ALUout;//LEDs
+
+    display display_inst(CLK100MHz,ina,instraddr,Reg_a,Reg_b,RamM,ramdisplay,MRegout,Regout,Regsel);
     
     //In order to figuret out why PCreg doesn't work, I make a delay register.
 

@@ -26,16 +26,17 @@ module instruction_execute(
     input Awrite0,Bwrite0,Mwrite0,
     input [7:0]regBtransmit,
     input PCwrite,
-    output [7:0]Reg_a,Reg_b,RamM,seg
+    output [7:0]Reg_a,Reg_b,RamM,ALUout,
+    output [0:2][7:0]ramdisplay
     );
     wire Awrite,Bwrite,Mwrite;
     assign Awrite = ~PCwrite&Awrite0;
     assign Bwrite = ~PCwrite&Bwrite0;
     assign Mwrite = ~PCwrite&Mwrite0;
     
-    ALU ALU_inst(opcode[2:0],Reg_a,Reg_b,RamM,seg);
-    Aregister Aregister_inst(CLK,Awrite,seg,Reg_a);
-    Bregister Bregister_inst(CLK,Bwrite,regBtransmit,seg,Reg_b);
-    RAM RAM_inst(Reg_b,Mwrite,CLK,seg,RamM);
+    ALU ALU_inst(opcode[2:0],Reg_a,Reg_b,RamM,ALUout);
+    Aregister Aregister_inst(CLK,Awrite,ALUout,Reg_a);
+    Bregister Bregister_inst(CLK,Bwrite,regBtransmit,ALUout,Reg_b);
+    RAM RAM_inst(Reg_b,Mwrite,CLK,ALUout,RamM,ramdisplay);
 
 endmodule

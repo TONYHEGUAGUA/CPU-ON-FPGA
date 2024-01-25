@@ -22,10 +22,12 @@ module RAM(
     input [7:0] addr,
     input write, CLK,
     input [7:0] Bytein,
-    output [7:0] Byteout
+    output [7:0] Byteout,
+    output [0:2][7:0] ramdisplay
 );
     wire [0:255]writeout;
     wire [0:255][7:0] Memory ;
+    assign ramdisplay[0:2] = Memory[125:127];
     
     Mux256bit Mux256bit_inst(write, addr, writeout);
     register256 register256_inst(CLK, writeout, Bytein, Memory);
