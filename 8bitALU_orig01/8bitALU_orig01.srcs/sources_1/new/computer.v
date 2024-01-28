@@ -53,6 +53,7 @@
      wire [2:0]opcode;
      wire [1:0]jumpcode;
      wire [0:2][7:0]ramdisplay;
+     wire [7:0] Reg_output;
      
      //confirm the instruction
      PCregister PCregister_inst(CLK,PCwrite,~PROGRAM1,~PROGRAM2,Reg_b,instraddr);
@@ -60,8 +61,9 @@
      
      instruction_decode instruction_decode_inst(CLK,instr,PCwrite,Awrite,Bwrite,Mwrite,opcode,jumpcode,regBtransmit);//control whether change RegB or execute ALU
      
-     instruction_execute instruction_execute_inst(CLK,opcode,Awrite,Bwrite,Mwrite,regBtransmit,PCwrite,Reg_a,Reg_b,RamM,ALUout,ramdisplay);//refresh the registers and output the seg.
+     instruction_execute instruction_execute_inst(CLK,opcode,Reg_a,Reg_b,RamM,ALUout,Reg_output);//refresh the registers and output the seg.
 
+     instruction_writeback instruction_writeback_inst(CLK,Awrite,Bwrite,Mwrite,regBtransmit,PCwrite,Reg_a,Reg_b,RamM,Reg_output,ramdisplay);//transmit the value from outputregister to Aregister,Bregister or RAM;
     
     //confirm PC counter's next step
     PCcontrol PCcontrol_inst(CLK,jumpcode,ALUout,PCwrite);
