@@ -56,13 +56,13 @@
      
      //confirm the instruction
          wire activate,PCtraceback;
-     wire [10:0]BHTdata;
+     wire [2:0]BHTdata;
      wire [2:0][7:0]PC_delay;
      wire [7:0]BTA;
      wire [1:0]CS;
      PCregister PCregister_inst(CLK,PCwrite,activate,CS[1],PCtraceback,~PROGRAM1,~PROGRAM2,Reg_b,BTA,instraddr,PC_delay);
 
-     dynamic_predictor dynamic_predictor_inst(CLK,instraddr,PC_delay[2],BHTdata,BTA,CS,activate);
+     dynamic_predictor dynamic_predictor_inst(CLK,instraddr,PC_delay[2],BHTdata,Reg_b,BTA,CS,activate);
      
      instruction_fetch instruction_fetch_inst(CLK,instraddr,PCwrite,instr);//Here complete INSTRUCTION_FETCH
      
@@ -72,7 +72,7 @@
 
 
     //confirm PC counter's next step
-    PCcontrol PCcontrol_inst(CLK,activate,jumpcode,ALUout,BHTdata,PCwrite,PCtraceback);
+    PCcontrol PCcontrol_inst(CLK,activate,CS,jumpcode,ALUout,BHTdata,PCwrite,PCtraceback);
     
     assign seg = ALUout;//LEDs
 

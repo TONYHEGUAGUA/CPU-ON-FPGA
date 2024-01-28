@@ -21,8 +21,9 @@
 
 module dynamic_predictor(
     input CLK,
-    input [7:0]instraddr,jumpaddr,
-    input [10:0]BHTdata,
+    input [7:0]instraddr,jumpaddr,//jumpcode是跳转指令的ROM地址
+    input [2:0]BHTdata,//{activate,CS}
+    input [7:0]TBA,//BHT which is prepared to be stored in BHT //regB actually
     output [7:0]BTA,
     output [1:0]CS,
     output activate
