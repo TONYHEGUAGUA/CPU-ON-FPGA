@@ -30,8 +30,7 @@ module PCcontrol(
     output reg [2:0] BHTdata,
     output reg PCwrite,PCtraceback
     ); 
-    
-    assign BHTdata=11'b00000000000;
+   
     //可能函数的输入就写错了？
     //可能这两个delay的时长不对？
     wire jump;//whether jump or not
@@ -54,7 +53,8 @@ module PCcontrol(
     //when ~activate_delay[1]&jump, just make PC=regB.
     //But when activate_delay[1]&~jump, return traceback.
     
-    BHTdata[2]<= jumpcode[1]|jumpcode[0];
-    CS_FSM CS_FSM_inst(CLK,activate_delay[1],jump,CS_delay[1],BHTdata[1:0]);
+    //BHTdata[2]<= jumpcode[1]|jumpcode[0];
+    BHTdata[2]<=1'b1;
     end
+    CS_FSM CS_FSM_inst(CLK,activate_delay[1],jump,CS_delay[1],BHTdata[1:0]);
 endmodule

@@ -115,7 +115,7 @@ wire [0:255][7:0] Memory;
     assign Memory[81] = 8'b10101000; // R0 = R0 + R1
     assign Memory[82] = 8'b00001001; // R1 = 0
     assign Memory[83] = 8'b11001100; // M[R1] = R0 // M[0] += 1
-    assign Memory[84] = 8'b01000110; // d70
+    assign Memory[84] = 8'b01001010; // d74
     assign Memory[85] = 8'b10000011; // jump RETURN
     
     // Show RAM
