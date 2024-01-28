@@ -55,16 +55,24 @@
      wire [0:2][7:0]ramdisplay;
      
      //confirm the instruction
-     PCregister PCregister_inst(CLK,PCwrite,~PROGRAM1,~PROGRAM2,Reg_b,instraddr);
+         wire activate,PCtraceback;
+     wire [10:0]BHTdata;
+     wire [2:0][7:0]PC_delay;
+     wire [7:0]BTA;
+     wire [1:0]CS;
+     PCregister PCregister_inst(CLK,PCwrite,activate,CS[1],PCtraceback,~PROGRAM1,~PROGRAM2,Reg_b,BTA,instraddr,PC_delay);
+
+     dynamic_predictor dynamic_predictor_inst(CLK,instraddr,PC_delay[2],BHTdata,BTA,CS,activate);
+     
      instruction_fetch instruction_fetch_inst(CLK,instraddr,PCwrite,instr);//Here complete INSTRUCTION_FETCH
      
      instruction_decode instruction_decode_inst(CLK,instr,PCwrite,Awrite,Bwrite,Mwrite,opcode,jumpcode,regBtransmit);//control whether change RegB or execute ALU
      
      instruction_execute instruction_execute_inst(CLK,opcode,Awrite,Bwrite,Mwrite,regBtransmit,PCwrite,Reg_a,Reg_b,RamM,ALUout,ramdisplay);//refresh the registers and output the seg.
 
-    
+
     //confirm PC counter's next step
-    PCcontrol PCcontrol_inst(CLK,jumpcode,ALUout,PCwrite);
+    PCcontrol PCcontrol_inst(CLK,activate,jumpcode,ALUout,BHTdata,PCwrite,PCtraceback);
     
     assign seg = ALUout;//LEDs
 

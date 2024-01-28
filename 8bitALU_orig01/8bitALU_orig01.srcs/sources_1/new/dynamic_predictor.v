@@ -19,9 +19,27 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module dynamic_predictorï¼ˆ
-
-ï¼‰;
-    // Add your code here
+module dynamic_predictor(
+    input CLK,
+    input [7:0]instraddr,jumpaddr,
+    input [10:0]BHTdata,
+    output [7:0]BTA,
+    output [1:0]CS,
+    output activate
+);
+    wire [10:0]Poutput;
+    assign BTA = Poutput[7:0];
+    assign CS = Poutput[9:8];
+    assign activate = Poutput[10];
+    
+    reg [7:0]addr;
+    always@(CLK)
+    begin
+    if(CLK==1)addr<=jumpaddr;
+    else addr<=instraddr;//ÔÚµÍµçÆ½Ê±£¬Ô¤±¸ºÃPC¼Ä´æÆ÷µÄÊýÖµ£¬¾ö¶¨ÊÇ·ñÒª½øÐÐÌø×ª
+    end
+    
+    //µÚÒ»¸öCLKÊµ¼ÊÉÏÊÇÊÇ·ñÐ´ÈëµÄ±êÊ¶£¬µ±Îª¸ßµçÆ½Ê±±íÊ¾¼´½«Ð´ÈëÊý¾Ý£¬È»ºóÔÚCLKÌøµ½µÍµçÆ½Ê±£¬¸üÐÂÊý¾Ý
+    BHT BHT_inst(addr,CLK,~CLK,BHTdata,Poutput);
     
 endmodule
