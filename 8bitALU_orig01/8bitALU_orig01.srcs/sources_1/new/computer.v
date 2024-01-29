@@ -76,11 +76,6 @@
     
     assign seg = ALUout;//LEDs
 
-    display display_inst(CLK100MHz,ina,instraddr,Reg_a,Reg_b,RamM,ramdisplay,MRegout,Regout,Regsel);
-    
-    //In order to figuret out why PCreg doesn't work, I make a delay register.
-
-    //testing mode
-    //assign MRegout = {7'b0000000,PCwrite};
-    //seg_led(CLK100MHz,instraddr,instr,Regsel,Regout);
+    //display display_inst(CLK100MHz,ina,instraddr,Reg_a,Reg_b,RamM,ramdisplay,MRegout,Regout,Regsel);
+     display display_inst(CLK100MHz,ina,instraddr,PC_delay[2],Reg_b,BHTdata,ramdisplay,MRegout,Regout,Regsel);
 endmodule

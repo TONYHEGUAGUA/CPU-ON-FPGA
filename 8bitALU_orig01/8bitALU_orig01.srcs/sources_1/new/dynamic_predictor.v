@@ -30,17 +30,20 @@ module dynamic_predictor(
 );
     wire [10:0]Poutput;
     assign BTA = Poutput[7:0];
-    assign CS = Poutput[9:8];
-    assign activate = Poutput[10];
+    //assign CS = Poutput[9:8];
+    assign CS = 2'b11;
+    //assign activate = Poutput[10];
+    assign activate = 1'b1;
     
     reg [7:0]addr;
     always@(*)
     begin
-    if(CLK==1)addr<=jumpaddr;
-    else addr<=instraddr;//在低电平时，预备好PC寄存器的数值，决定是否要进行跳转
+    if(CLK==1)addr=jumpaddr;
+    else addr=instraddr;//在低电平时，预备好PC寄存器的数值，决定是否要进行跳转
     end
     
     //第一个CLK实际上是是否写入的标识，当为高电平时表示即将写入数据，然后在CLK跳到低电平时，更新数据
     BHT BHT_inst(addr,CLK,~CLK,{BHTdata,TBA},Poutput);
+    //BHT BHT_inst(addr,CLK,~CLK,{3'b111,TBA},Poutput);
     
 endmodule

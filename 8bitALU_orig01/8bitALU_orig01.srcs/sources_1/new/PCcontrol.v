@@ -33,6 +33,8 @@ module PCcontrol(
    
     //可能函数的输入就写错了？
     //可能这两个delay的时长不对？
+    //mark on Jan 29th, 2024
+    //我认为这里需要一个输出寄存器的的数值而不是ALU的直接输出aluout，因为这里对输出结果相关联的jump是要求稳定的，和CLK同步发生的ALUout必然会产生一个不正确的结果。
     wire jump;//whether jump or not
     assign jump=(jumpcode[1]&~ALUout[7]&~ALUout[6]&~ALUout[5]&~ALUout[4]&~ALUout[3]&~ALUout[2]&~ALUout[1]&~ALUout[0])|(jumpcode[0]&~ALUout[7]&(ALUout[6]|ALUout[5]|ALUout[4]|ALUout[3]|ALUout[2]|ALUout[1]|ALUout[0]))|(jumpcode[1]&jumpcode[0]);
     reg [1:0]activate_delay;
