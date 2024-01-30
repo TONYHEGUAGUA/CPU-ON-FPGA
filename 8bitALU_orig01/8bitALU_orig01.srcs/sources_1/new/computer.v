@@ -57,13 +57,14 @@
      
      //confirm the instruction
      PCregister PCregister_inst(CLK,PCwrite,~PROGRAM1,~PROGRAM2,Reg_b,instraddr);
+
      instruction_fetch instruction_fetch_inst(CLK,instraddr,PCwrite,instr);//Here complete INSTRUCTION_FETCH
      
      instruction_decode instruction_decode_inst(CLK,instr,PCwrite,Awrite,Bwrite,Mwrite,opcode,jumpcode,regBtransmit);//control whether change RegB or execute ALU
      
-     instruction_execute instruction_execute_inst(CLK,opcode,Reg_a,Reg_b,RamM,ALUout,Reg_output);//refresh the registers and output the seg.
+     instruction_execute instruction_execute_inst(CLK,opcode,Reg_a,Reg_b,RamM,regBtransmit,PCwrite,Awrite,Bwrite,Mwrite,Awrite_delay,Bwrite_delay,Mwrite_delay,ALUout,Reg_output);//refresh the registers and output the seg.
 
-     instruction_writeback instruction_writeback_inst(CLK,Awrite,Bwrite,Mwrite,regBtransmit,PCwrite,Reg_a,Reg_b,RamM,Reg_output,ramdisplay);//transmit the value from outputregister to Aregister,Bregister or RAM;
+     instruction_writeback instruction_writeback_inst(CLK,Awrite_delay,Bwrite_delay,Mwrite_delay,PCwrite,Reg_a,Reg_b,RamM,Reg_output,ramdisplay);//transmit the value from outputregister to Aregister,Bregister or RAM;
     
     //confirm PC counter's next step
     PCcontrol PCcontrol_inst(CLK,jumpcode,ALUout,PCwrite);

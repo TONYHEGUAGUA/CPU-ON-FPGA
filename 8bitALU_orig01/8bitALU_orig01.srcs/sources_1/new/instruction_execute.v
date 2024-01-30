@@ -23,11 +23,25 @@
 module instruction_execute(
     input CLK,
     input [2:0]opcode,
-    output [7:0]Reg_a,Reg_b,RamM,ALUout,
-    output [7:0] Reg_output
-    );
+    input [7:0]Reg_a,Reg_b,RamM,regBtransmit,
+
+    input PCwrite,
+    input Awrite,Bwrite,Mwrite, //write enable
+    output Awrite_delay,Bwrite_delay,Mwrite_delay,
     
+    output [7:0]Reg_output,
+    output [7:0] ALUout
+    );
+
+    //wirte(2) registor
+    always@(posedge CLK)
+    begin
+        Awrite_delay <= ~PCwrite&Awrite;
+        Bwrite_delay <= ~PCwrite&Bwrite;
+        Mwrite_delay <= ~PCwrite&Mwrite;
+    end
+
     ALU ALU_inst(opcode[2:0],Reg_a,Reg_b,RamM,ALUout);
-    outputregister outputregister_inst(CLK ,ALUout, Reg_output);
+    outputregister outputregister_inst(CLK ,ALUout,regBtransmit, Reg_output);
 
 endmodule

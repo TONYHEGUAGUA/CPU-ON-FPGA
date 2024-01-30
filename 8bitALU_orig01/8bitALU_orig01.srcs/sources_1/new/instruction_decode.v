@@ -37,7 +37,7 @@ module instruction_decode(
     always @(posedge CLK)
     begin
         //confirm destinatin of ALU output
-    Bwrite <= type&~Rd[1]&~Rd[0];
+    Bwrite <= (type&~Rd[1]&~Rd[0])|(~PCwrite&~instr[7]);//右边的条件表示立即数操作
     Awrite <= type&~Rd[1]&Rd[0];
     Mwrite <= type&Rd[1]&~Rd[0];
     
@@ -46,7 +46,6 @@ module instruction_decode(
     opcode[0] <= type&instr[2];
     jumpcode[1] <= type&instr[1];
     jumpcode[0] <= type&instr[0];
-    regBtransmit[7] <= PCwrite|instr[7];
-    regBtransmit[6:0] <= instr[6:0];
+    regBtransmit[7:0] <= instr[7:0];
     end
 endmodule

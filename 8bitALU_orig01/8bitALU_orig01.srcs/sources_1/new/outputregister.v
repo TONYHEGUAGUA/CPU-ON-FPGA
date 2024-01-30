@@ -23,9 +23,12 @@
 module outputregister(
     input CLK,
     input ALUout,
+    input regBtransmit,
     output reg Reg_output
     );
-    always @(posedge clk ) begin
-        Reg_output <= ALUout;
+    always @(posedge clk ) 
+    begin
+        if(regBtransmit[7] == 0)Reg_output <= regBtransmit;
+        else Reg_output <= ALUout;
     end
 endmodule
