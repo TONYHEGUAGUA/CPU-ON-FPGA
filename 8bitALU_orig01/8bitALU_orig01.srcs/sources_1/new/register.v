@@ -25,9 +25,9 @@ module register(
     input [7:0] Bytein,
     output [7:0] Byteout
     );
-    reg [7:0]ByteMemo;
-    always@(posedge CLK)
-    if(write == 1)ByteMemo <= Bytein;
+    //reg [7:0]ByteMemo;
+    //always@(posedge CLK)
+    //if(write == 1)ByteMemo <= Bytein;
     
-    assign Byteout = ByteMemo;
+    assign Byteout = Bytein;
 endmodule
