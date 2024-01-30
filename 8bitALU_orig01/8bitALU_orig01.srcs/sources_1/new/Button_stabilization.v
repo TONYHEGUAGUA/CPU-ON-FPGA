@@ -25,13 +25,13 @@ module Button_stabilization(
     input button,
     output reg button_delay
         );
-        reg [15:0] count;
+        reg [16:0] count;
         always @(posedge CLK100MHz)
         begin
             if(button == 1'b1) begin
-                if(count < 16'd9999)
+                if(count < 17'b11111111111111111)
                     count <= count + 1'b1;
-                button_delay <= (count == 16'd9999);
+                button_delay <= (count == 17'b11111111111111111);
             end
             else begin
                 count <= 16'd0;

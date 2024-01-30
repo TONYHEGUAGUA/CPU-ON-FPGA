@@ -48,7 +48,8 @@
      wire [7:0]Reg_a;
      wire [7:0]Reg_b;
      wire [7:0]RamM;
-     reg Awrite,Bwrite,Mwrite,PCwrite;
+     wire Awrite,Bwrite,Mwrite,PCwrite;
+     wire Awrite_delay,Bwrite_delay,Mwrite_delay;
      wire [7:0]ALUout;//the output of ALU
      wire [7:0]instraddr;
      wire [7:0]instr,regBtransmit;
@@ -74,10 +75,7 @@
     assign seg = ALUout;//LEDs
 
     //display display_inst(CLK100MHz,ina,instraddr,Reg_a,Reg_b,RamM,ramdisplay,MRegout,Regout,Regsel);
-    display display_inst(CLK100MHz,ina,instraddr,instr,regBtransmit,Reg_output,ramdisplay,MRegout,Regout,Regsel);
+    display display_inst(CLK100MHz,ina,instraddr,Reg_b,Bwrite_delay,Reg_output,ramdisplay,MRegout,Regout,Regsel);
     //In order to figuret out why PCreg doesn't work, I make a delay register.
 
-    //testing mode
-    //assign MRegout = {7'b0000000,PCwrite};
-    //seg_led(CLK100MHz,instraddr,instr,Regsel,Regout);
 endmodule
