@@ -28,7 +28,7 @@ module instruction_execute(
 
     input PCwrite,
     input Awrite,Bwrite,Mwrite, //write enable
-    output Awrite_delay,Bwrite_delay,Mwrite_delay,
+    output reg Awrite_delay,Bwrite_delay,Mwrite_delay,
     
     output [7:0]Reg_output,
     output [7:0] ALUout
@@ -42,7 +42,7 @@ module instruction_execute(
         Mwrite_delay <= ~PCwrite&Mwrite;
     end
 
-    ALU ALU_inst(ARisk,BRisk,MRisk,opcode[2:0],Reg_a,Reg_b,RamM,Reg_output,ALUout);
+    ALU ALU_inst(Reg_ARisk,Reg_BRisk,Reg_MRisk,opcode[2:0],Reg_a,Reg_b,RamM,Reg_output,ALUout);
     outputregister outputregister_inst(CLK ,ALUout,regBtransmit, Reg_output);
 
 endmodule

@@ -62,7 +62,7 @@
      
      instruction_decode instruction_decode_inst(CLK,instr,PCwrite,Awrite,Bwrite,Mwrite,opcode,jumpcode,regBtransmit,Reg_ARisk,Reg_BRisk,Reg_MRisk);//control whether change RegB or execute ALU
      
-     instruction_execute instruction_execute_inst(CLK,opcode,Reg_a,Reg_b,RamM,regBtransmit,Reg_ARisk, Reg_BRisk, Reg_MRisk,PCwrite,Awrite,Bwrite,Mwrite,Awrite_delay,Bwrite_delay,Mwrite_delay,ALUout,Reg_output);//refresh the registers and output the seg.
+     instruction_execute instruction_execute_inst(CLK,opcode,Reg_a,Reg_b,RamM,regBtransmit,Reg_ARisk, Reg_BRisk, Reg_MRisk,PCwrite,Awrite,Bwrite,Mwrite,Awrite_delay,Bwrite_delay,Mwrite_delay,Reg_output,ALUout);//refresh the registers and output the seg.
 
      instruction_writeback instruction_writeback_inst(CLK,Awrite_delay,Bwrite_delay,Mwrite_delay,PCwrite,Reg_a,Reg_b,RamM,Reg_output,ramdisplay);//transmit the value from outputregister to Aregister,Bregister or RAM;
     
@@ -71,8 +71,8 @@
     
     assign seg = ALUout;//LEDs
 
-    display display_inst(CLK100MHz,ina,instraddr,Reg_a,Reg_b,RamM,ramdisplay,MRegout,Regout,Regsel);
-    
+    //display display_inst(CLK100MHz,ina,instraddr,Reg_a,Reg_b,RamM,ramdisplay,MRegout,Regout,Regsel);
+    display display_inst(CLK100MHz,ina,instraddr,Reg_a,regBtransmit,Reg_output,ramdisplay,MRegout,Regout,Regsel);
     //In order to figuret out why PCreg doesn't work, I make a delay register.
 
     //testing mode

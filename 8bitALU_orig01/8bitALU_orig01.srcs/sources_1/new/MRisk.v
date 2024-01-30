@@ -26,6 +26,7 @@ module MRisk(
     input Mwrite,
     output reg Reg_MRisk
     );
+    wire [1:0]Rd;
     assign Rd[1:0] = instr[6:5];
 
     always @(posedge CLK)

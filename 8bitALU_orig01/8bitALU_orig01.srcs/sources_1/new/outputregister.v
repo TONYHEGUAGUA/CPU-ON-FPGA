@@ -22,13 +22,14 @@
 
 module outputregister(
     input CLK,
-    input ALUout,
-    input regBtransmit,
-    output reg Reg_output
+    input [7:0]ALUout,
+    input [7:0]regBtransmit,
+    output reg [7:0] Reg_output// forget reg& it;s an array.:(
     );
-    always @(posedge clk ) 
+    always @(posedge CLK ) 
     begin
         if(regBtransmit[7] == 0)Reg_output <= regBtransmit;
         else Reg_output <= ALUout;
+        //Reg_output <= 8'b11111111;
     end
 endmodule

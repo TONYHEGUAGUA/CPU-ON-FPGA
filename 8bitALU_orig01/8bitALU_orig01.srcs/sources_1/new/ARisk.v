@@ -26,6 +26,7 @@ module ARisk(
     input Awrite,
     output reg Reg_ARisk
     );
+    wire [1:0]Rd;
     assign Rd[1:0] = instr[6:5];
 
 

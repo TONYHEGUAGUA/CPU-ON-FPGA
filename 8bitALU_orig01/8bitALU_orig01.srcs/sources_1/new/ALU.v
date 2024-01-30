@@ -27,7 +27,6 @@ input [7:0]Reg_a,Reg_b,RamM,Reg_output,
 output reg [7:0]ALUout//delete "sign"
     );
     wire [7:0] sum;
-    adder adder_inst(Reg_a,Reg_b,Reg_output,ARisk,BRisk,sum);
     always@(*)
         case(opcode)
             3'b000:ALUout = (BRisk == 1) ? Reg_output : Reg_b; // R1
@@ -37,7 +36,7 @@ output reg [7:0]ALUout//delete "sign"
             3'b100:ALUout = (MRisk == 1) ? Reg_output : RamM;
             3'b101:ALUout = (ARisk == 1) ? !Reg_output : !Reg_a;
             3'b110:ALUout = (ARisk == 1) ? Reg_output & Reg_b : (BRisk == 1) ? Reg_a & Reg_output : Reg_a & Reg_b; //R0&R1
-            3'b111:ALUout = (Arisk == 1) ? Reg_output | Reg_b : (BRisk == 1) ? Reg_a | Reg_output : Reg_a | Reg_b; //R0|R1
+            3'b111:ALUout = (ARisk == 1) ? Reg_output | Reg_b : (BRisk == 1) ? Reg_a | Reg_output : Reg_a | Reg_b; //R0|R1
         endcase
 endmodule
 

@@ -26,7 +26,7 @@ module BRisk(
     input Bwrite,
     output reg Reg_BRisk
     );
-
+    wire [1:0]Rd;
     assign Rd[1:0] = instr[6:5];
 
 
