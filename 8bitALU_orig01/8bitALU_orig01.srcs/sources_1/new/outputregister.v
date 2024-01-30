@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2024/01/16 10:14:17
+// Create Date: 2024/01/28 21:18:00
 // Design Name: 
-// Module Name: instruction_execute
+// Module Name: outputregister
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,14 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module instruction_execute(
+module outputregister(
     input CLK,
-    input [2:0]opcode,
-    output [7:0]Reg_a,Reg_b,RamM,ALUout,
-    output [7:0] Reg_output
+    input ALUout,
+    output Reg_output
     );
-    
-    ALU ALU_inst(opcode[2:0],Reg_a,Reg_b,RamM,ALUout);
-    outputregister outputregister_inst(CLK ,ALUout, Reg_output);
-
+    always @(posedge clk ) begin
+        Reg_output <= ALUout;
+    end
 endmodule
