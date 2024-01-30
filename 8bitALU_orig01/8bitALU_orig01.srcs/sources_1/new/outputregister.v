@@ -23,7 +23,7 @@
 module outputregister(
     input CLK,
     input ALUout,
-    output Reg_output
+    output reg Reg_output
     );
     always @(posedge clk ) begin
         Reg_output <= ALUout;
