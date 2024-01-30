@@ -42,7 +42,7 @@ module instruction_execute(
         Mwrite_delay <= ~PCwrite&Mwrite;
     end
 
-    ALU ALU_inst(Reg_ARisk,Reg_BRisk,Reg_MRisk,opcode[2:0],Reg_a,Reg_b,RamM,Reg_output,ALUout);
+    ALU ALU_inst(Awrite_delay,Bwrite_delay,Mwrite_delay,opcode[2:0],Reg_a,Reg_b,RamM,Reg_output,ALUout);//ESP:replace XRisk by Xwrite_delay
     outputregister outputregister_inst(CLK ,ALUout,regBtransmit, Reg_output);
 
 endmodule

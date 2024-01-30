@@ -35,10 +35,12 @@
     //output PCwrite
 );
      //CLK switch
+     wire stable_MANCLK;
+     Button_stabilization Button_stabilization_inst(CLK100MHz,MANCLK,stable_MANCLK);
      reg CLK;
      always@(*)
      begin
-     if(ina[0]==0)CLK=MANCLK;
+     if(ina[0]==0)CLK=stable_MANCLK;
      else CLK=CLK100MHz;
      end 
 
@@ -72,7 +74,7 @@
     assign seg = ALUout;//LEDs
 
     //display display_inst(CLK100MHz,ina,instraddr,Reg_a,Reg_b,RamM,ramdisplay,MRegout,Regout,Regsel);
-    display display_inst(CLK100MHz,ina,instraddr,Reg_a,regBtransmit,Reg_output,ramdisplay,MRegout,Regout,Regsel);
+    display display_inst(CLK100MHz,ina,instraddr,instr,regBtransmit,Reg_output,ramdisplay,MRegout,Regout,Regsel);
     //In order to figuret out why PCreg doesn't work, I make a delay register.
 
     //testing mode

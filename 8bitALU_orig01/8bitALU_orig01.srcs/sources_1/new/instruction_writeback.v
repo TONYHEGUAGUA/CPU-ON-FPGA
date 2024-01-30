@@ -28,6 +28,13 @@ module instruction_writeback(
     output [0:2][7:0]ramdisplay
     );
 
+    reg [7:0]address;
+    always@(*)
+    begin
+        if(Bwrite)address <= Reg_output;
+        else address <= Reg_b;
+    end
+    
     Aregister Aregister_inst(CLK,Awrite,Reg_output,Reg_a);
     Bregister Bregister_inst(CLK,Bwrite,Reg_output,Reg_b);
     RAM RAM_inst(Reg_b,Mwrite,CLK,Reg_output,RamM,ramdisplay);
