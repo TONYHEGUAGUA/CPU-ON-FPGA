@@ -24,7 +24,9 @@ module instruction_writeback(
     input CLK,
     input Awrite,Bwrite,Mwrite, //write enable
     input PCwrite,
-    output [7:0]Reg_a,Reg_b,RamM,Reg_output,
+    input [7:0]Reg_output,
+    output [7:0]Reg_a,Reg_b,RamM,
+
     output [0:2][7:0]ramdisplay
     );
 
@@ -36,6 +38,6 @@ module instruction_writeback(
     end//这里也需要注意可能存在竞争的问题，所以需要确定好address的值
 
     Aregister Aregister_inst(CLK,Awrite,Reg_output,Reg_a);
-    Bregister Bregister_inst(CLK,1'b1,Reg_output,Reg_b);
+    Bregister Bregister_inst(CLK,Bwrite,Reg_output,Reg_b);
     RAM RAM_inst(Reg_b,Mwrite,CLK,Reg_output,RamM,ramdisplay);
 endmodule

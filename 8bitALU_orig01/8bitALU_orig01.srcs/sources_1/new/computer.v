@@ -67,7 +67,7 @@
      
      instruction_execute instruction_execute_inst(CLK,opcode,Reg_a,Reg_b,RamM,regBtransmit,Reg_ARisk, Reg_BRisk, Reg_MRisk,PCwrite,Awrite,Bwrite,Mwrite,Awrite_delay,Bwrite_delay,Mwrite_delay,Reg_output,ALUout);//refresh the registers and output the seg.
 
-     instruction_writeback instruction_writeback_inst(CLK,Awrite_delay,Bwrite_delay,Mwrite_delay,PCwrite,Reg_a,Reg_b,RamM,Reg_output,ramdisplay);//transmit the value from outputregister to Aregister,Bregister or RAM;
+     instruction_writeback instruction_writeback_inst(CLK,Awrite_delay,Bwrite_delay,Mwrite_delay,PCwrite,Reg_output,Reg_a,Reg_b,RamM,ramdisplay);//transmit the value from outputregister to Aregister,Bregister or RAM;
     
     //confirm PC counter's next step
     PCcontrol PCcontrol_inst(CLK,jumpcode,ALUout,PCwrite);
