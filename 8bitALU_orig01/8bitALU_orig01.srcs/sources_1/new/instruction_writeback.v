@@ -39,5 +39,5 @@ module instruction_writeback(
 
     Aregister Aregister_inst(CLK,Awrite,Reg_output,Reg_a);
     Bregister Bregister_inst(CLK,Bwrite,Reg_output,Reg_b);
-    RAM RAM_inst(Reg_b,Mwrite,CLK,Reg_output,RamM,ramdisplay);
+    RAM RAM_inst(address,Mwrite,CLK,Reg_output,RamM,ramdisplay);
 endmodule
