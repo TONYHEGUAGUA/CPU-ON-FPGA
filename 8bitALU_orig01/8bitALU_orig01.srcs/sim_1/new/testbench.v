@@ -22,32 +22,38 @@
 
 module testbench(
     );
-    reg CLK3Hz,PROGRAM;
-    wire[7:0]instr,instraddr,ARegout,BRegout,MRegout;
-    wire [2:0]opcode;
-    wire PCwrite;
+    reg CLK100MHz,PROGRAM;
+    reg [3:0]ina;
+    wire[7:0]instraddr,ARegout,BRegout,MRegout,Reg_output;
+    //wire [2:0]opcode;
+    wire  Awrite,Bwrite,Mwrite,PCwrite;
     
     computer computer_inst(
-    .CLK3Hz(CLK3Hz),
-    .PROGRAM2(PROGRAM),
-    .instr(instr),
-    .MRegout(MRegout),
+    .CLK100MHz(CLK100MHz),
+    .ina(ina),
+    .PROGRAM1(PROGRAM),
+    //.instr(instr),
+    .RamM(MRegout),
     .instraddr(instraddr),
     .Reg_b(BRegout),
     .Reg_a(ARegout),
-    .opcode(opcode),
-    .PCwrite(PCwrite)
+    //.opcode(opcode),
+    .Awrite(Awrite),
+    .Bwrite(Bwrite),
+    .Mwrite(Mwrite),
+    .PCwrite(PCwrite),
+    .Reg_output(Reg_output)
     );
     
     initial
     begin
-    CLK3Hz = 0;
+    CLK100MHz = 0;
     PROGRAM = 0;
-   
+    ina = 4'b0001;
     #10 PROGRAM =1;
     end
     always
     begin
-    #1 CLK3Hz = ~CLK3Hz;
+    #1 CLK100MHz = ~CLK100MHz;
     end
 endmodule

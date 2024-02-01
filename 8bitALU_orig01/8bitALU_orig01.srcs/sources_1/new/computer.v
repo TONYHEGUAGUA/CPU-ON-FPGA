@@ -29,10 +29,12 @@
     output [7:0]MRegout,
     output [7:0]Regout,
     output [3:0]Regsel
+    
+    //BELOW FOR SIMULATION USE
+    ,output [7:0]instraddr,Reg_b,Reg_a,Reg_output,RamM,
 
-    //,output [7:0]instraddr,instr,Reg_b,Reg_a,
-    //output [2:0]opcode,
-    //output PCwrite
+    output  Awrite,Bwrite,Mwrite,PCwrite
+    
 );
      //CLK switch
      wire stable_MANCLK;
