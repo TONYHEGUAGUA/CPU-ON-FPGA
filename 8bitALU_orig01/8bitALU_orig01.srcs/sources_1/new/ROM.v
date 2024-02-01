@@ -45,7 +45,7 @@ wire [0:255][7:0] Memory;
     assign Memory[15] = 8'b00001000;//R1= 8
     assign Memory[16] = 8'b10100000;//R0=R1
     assign Memory[17] = 8'b00001010;//R1 = T
-    assign Memory[18] = 8'b11001100;//M[R1] = R0;//T =8s//4
+    assign Memory[18] = 8'b11001100;//M[R1] = R0;//T =8
     assign Memory[19] = 8'b00000000;//R1= 0
     assign Memory[20] = 8'b10100000;//R0=R1
     assign Memory[21] = 8'b00001011;//R1 = i

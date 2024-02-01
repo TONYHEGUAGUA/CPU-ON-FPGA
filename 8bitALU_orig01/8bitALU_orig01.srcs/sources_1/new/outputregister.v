@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2024/01/07 21:12:15
+// Create Date: 2024/01/28 21:18:00
 // Design Name: 
-// Module Name: register
+// Module Name: outputregister
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,15 +20,16 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module register(
-    input CLK,write,
-    input [7:0] Bytein,
-    output [7:0] Byteout
+module outputregister(
+    input CLK,
+    input [7:0]ALUout,
+    input [7:0]regBtransmit,
+    output reg [7:0] Reg_output// forget reg& it;s an array.:(
     );
-    reg [7:0]ByteMemo;
-    always@(posedge CLK)
-    if(write == 1)ByteMemo <= Bytein;
-
-    assign Byteout = ByteMemo;
-    
+    always @(posedge CLK ) 
+    begin
+        if(regBtransmit[7] == 0)Reg_output <= regBtransmit;
+        else Reg_output <= ALUout;
+        //Reg_output <= 8'b11111111;
+    end
 endmodule

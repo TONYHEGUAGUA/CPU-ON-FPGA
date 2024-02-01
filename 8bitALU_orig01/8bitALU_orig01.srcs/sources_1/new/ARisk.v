@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2024/01/07 21:12:15
+// Create Date: 2024/01/30 15:14:44
 // Design Name: 
-// Module Name: register
+// Module Name: ARisk
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,15 +20,19 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module register(
-    input CLK,write,
-    input [7:0] Bytein,
-    output [7:0] Byteout
+module ARisk(
+    input CLK,
+    input [7:0]instr,
+    input Awrite,
+    output reg Reg_ARisk
     );
-    reg [7:0]ByteMemo;
-    always@(posedge CLK)
-    if(write == 1)ByteMemo <= Bytein;
+    wire [1:0]Rd;
+    assign Rd[1:0] = instr[6:5];
 
-    assign Byteout = ByteMemo;
-    
+
+    always @(posedge CLK)
+    begin
+        if(~Rd[1]&Rd[0]&Awrite)Reg_ARisk <= 1;
+        else Reg_ARisk <= 0;
+    end
 endmodule

@@ -29,16 +29,20 @@
     output [7:0]MRegout,
     output [7:0]Regout,
     output [3:0]Regsel
-
-    //,output [7:0]instraddr,instr,Reg_b,Reg_a,
-    //output [2:0]opcode,
-    //output PCwrite
+    
+    //BELOW FOR SIMULATION USE
+    //,output [7:0]instraddr,Reg_b,Reg_a,Reg_output,RamM,
+    //output  Awrite_delay,Bwrite_delay,Mwrite_delay,PCwrite,
+    //output [0:2][7:0]ramdisplay
+    
 );
      //CLK switch
+     wire stable_MANCLK;
+     Button_stabilization Button_stabilization_inst(CLK100MHz,MANCLK,stable_MANCLK);
      reg CLK;
      always@(*)
      begin
-     if(ina[0]==0)CLK=MANCLK;
+     if(ina[0]==0)CLK=stable_MANCLK;
      else CLK=CLK100MHz;
      end 
 
@@ -46,14 +50,16 @@
      wire [7:0]Reg_a;
      wire [7:0]Reg_b;
      wire [7:0]RamM;
-     reg Awrite,Bwrite,Mwrite,PCwrite;
+     wire Awrite,Bwrite,Mwrite,PCwrite;
+     wire Awrite_delay,Bwrite_delay,Mwrite_delay;
      wire [7:0]ALUout;//the output of ALU
      wire [7:0]instraddr;
      wire [7:0]instr,regBtransmit;
      wire [2:0]opcode;
      wire [1:0]jumpcode;
      wire [0:2][7:0]ramdisplay;
-     
+     wire [7:0] Reg_output;
+     wire Reg_ARisk, Reg_BRisk, Reg_MRisk;
      //confirm the instruction
          wire activate,PCtraceback;
      wire [2:0]BHTdata;
@@ -66,16 +72,19 @@
      
      instruction_fetch instruction_fetch_inst(CLK,instraddr,PCwrite,instr);//Here complete INSTRUCTION_FETCH
      
-     instruction_decode instruction_decode_inst(CLK,instr,PCwrite,Awrite,Bwrite,Mwrite,opcode,jumpcode,regBtransmit);//control whether change RegB or execute ALU
+     instruction_decode instruction_decode_inst(CLK,instr,PCwrite,Awrite,Bwrite,Mwrite,opcode,jumpcode,regBtransmit,Reg_ARisk,Reg_BRisk,Reg_MRisk);//control whether change RegB or execute ALU
      
-     instruction_execute instruction_execute_inst(CLK,opcode,Awrite,Bwrite,Mwrite,regBtransmit,PCwrite,Reg_a,Reg_b,RamM,ALUout,ramdisplay);//refresh the registers and output the seg.
+     instruction_execute instruction_execute_inst(CLK,opcode,Reg_a,Reg_b,RamM,regBtransmit,Reg_ARisk, Reg_BRisk, Reg_MRisk,PCwrite,Awrite,Bwrite,Mwrite,Awrite_delay,Bwrite_delay,Mwrite_delay,Reg_output,ALUout);//refresh the registers and output the seg.
 
-
+     instruction_writeback instruction_writeback_inst(CLK,Awrite_delay,Bwrite_delay,Mwrite_delay,PCwrite,Reg_output,Reg_a,Reg_b,RamM,ramdisplay);//transmit the value from outputregister to Aregister,Bregister or RAM;
+    
     //confirm PC counter's next step
     PCcontrol PCcontrol_inst(CLK,activate,CS,jumpcode,ALUout,BHTdata,PCwrite,PCtraceback);
     
     assign seg = ALUout;//LEDs
 
-    //display display_inst(CLK100MHz,ina,instraddr,Reg_a,Reg_b,RamM,ramdisplay,MRegout,Regout,Regsel);
-     display display_inst(CLK100MHz,ina,instraddr,PC_delay[2],Reg_b,BHTdata,ramdisplay,MRegout,Regout,Regsel);
+    display display_inst(CLK100MHz,ina,instraddr,Reg_a,Reg_b,RamM,ramdisplay,MRegout,Regout,Regsel);
+    //display display_inst(CLK100MHz,ina,instraddr,Reg_b,Bwrite_delay,Reg_output,ramdisplay,MRegout,Regout,Regsel);
+    //In order to figuret out why PCreg doesn't work, I make a delay register.
+
 endmodule

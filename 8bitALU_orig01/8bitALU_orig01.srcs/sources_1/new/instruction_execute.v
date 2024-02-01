@@ -23,20 +23,26 @@
 module instruction_execute(
     input CLK,
     input [2:0]opcode,
-    input Awrite0,Bwrite0,Mwrite0,
-    input [7:0]regBtransmit,
+    input [7:0]Reg_a,Reg_b,RamM,regBtransmit,
+    input Reg_ARisk, Reg_BRisk, Reg_MRisk,
+
     input PCwrite,
-    output [7:0]Reg_a,Reg_b,RamM,ALUout,
-    output [0:2][7:0]ramdisplay
-    );
-    wire Awrite,Bwrite,Mwrite;
-    assign Awrite = ~PCwrite&Awrite0;
-    assign Bwrite = ~PCwrite&Bwrite0;
-    assign Mwrite = ~PCwrite&Mwrite0;
+    input Awrite,Bwrite,Mwrite, //write enable
+    output reg Awrite_delay,Bwrite_delay,Mwrite_delay,
     
-    ALU ALU_inst(opcode[2:0],Reg_a,Reg_b,RamM,ALUout);
-    Aregister Aregister_inst(CLK,Awrite,ALUout,Reg_a);
-    Bregister Bregister_inst(CLK,Bwrite,regBtransmit,ALUout,Reg_b);
-    RAM RAM_inst(Reg_b,Mwrite,CLK,ALUout,RamM,ramdisplay);
+    output [7:0]Reg_output,
+    output [7:0] ALUout
+    );
+
+    //wirte(2) registor
+    always@(posedge CLK)
+    begin
+        Awrite_delay <= ~PCwrite&Awrite;
+        Bwrite_delay <= ~PCwrite&Bwrite;
+        Mwrite_delay <= ~PCwrite&Mwrite;
+    end
+
+    ALU ALU_inst(Awrite_delay,Bwrite_delay,Mwrite_delay,opcode[2:0],Reg_a,Reg_b,RamM,Reg_output,ALUout);//ESP:replace XRisk by Xwrite_delay
+    outputregister outputregister_inst(CLK ,ALUout,regBtransmit, Reg_output);
 
 endmodule

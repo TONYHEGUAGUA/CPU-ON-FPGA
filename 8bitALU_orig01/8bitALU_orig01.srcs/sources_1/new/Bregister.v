@@ -22,23 +22,8 @@
 
 module Bregister(
     input CLK,Bwrite,
-    input [7:0]regBtransmit,
-    input [7:0]seg,
+    input [7:0]Bytein,
     output [7:0] Byteout
 );
-    reg [7:0]Bytein;
-    reg write;
-    always @(*) begin
-    if (regBtransmit[7] == 0)
-        begin
-        Bytein = regBtransmit;
-        write = 1;
-        end
-    else
-        begin
-        Bytein = seg;
-        write = Bwrite;
-        end
-    end
-    register register_inst(CLK,write,Bytein,Byteout);
+    register register_inst(CLK,Bwrite,Bytein,Byteout);
 endmodule

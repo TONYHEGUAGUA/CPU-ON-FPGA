@@ -27,7 +27,8 @@ module instruction_decode(
     output reg Awrite,Bwrite,Mwrite,
     output reg [2:0]opcode,
     output reg [1:0]jumpcode,
-    output reg [7:0]regBtransmit
+    output reg [7:0]regBtransmit,
+    output Reg_ARisk, Reg_BRisk, Reg_MRisk
     );
     wire type;
     wire [1:0]Rd;
@@ -37,7 +38,7 @@ module instruction_decode(
     always @(posedge CLK)
     begin
         //confirm destinatin of ALU output
-    Bwrite <= type&~Rd[1]&~Rd[0];
+    Bwrite <= (type&~Rd[1]&~Rd[0])|(~PCwrite&~instr[7]);//右边的条件表示立即数操作
     Awrite <= type&~Rd[1]&Rd[0];
     Mwrite <= type&Rd[1]&~Rd[0];
     
@@ -46,7 +47,27 @@ module instruction_decode(
     opcode[0] <= type&instr[2];
     jumpcode[1] <= type&instr[1];
     jumpcode[0] <= type&instr[0];
-    regBtransmit[7] <= PCwrite|instr[7];
-    regBtransmit[6:0] <= instr[6:0];
+    regBtransmit[7:0] <= instr[7:0];
     end
+
+    ARisk ARisk_inst(
+        .CLK(CLK),
+        .instr(instr),
+        .Awrite(Awrite),
+        .Reg_ARisk(Reg_ARisk)
+        );
+
+    BRisk BRisk_inst(
+        .CLK(CLK),
+        .instr(instr),
+        .Bwrite(Bwrite),
+        .Reg_BRisk(Reg_BRisk)
+        );
+
+    MRisk MRisk_inst(
+        .CLK(CLK),
+        .instr(instr),
+        .Mwrite(Mwrite),
+        .Reg_MRisk(Reg_MRisk)
+        );
 endmodule
