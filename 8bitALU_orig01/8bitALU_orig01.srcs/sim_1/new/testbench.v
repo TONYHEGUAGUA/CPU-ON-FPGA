@@ -27,6 +27,7 @@ module testbench(
     wire[7:0]instraddr,ARegout,BRegout,MRegout,Reg_output;
     //wire [2:0]opcode;
     wire  Awrite,Bwrite,Mwrite,PCwrite;
+    wire [0:2][7:0]ramdisplay;
     
     computer computer_inst(
     .CLK100MHz(CLK100MHz),
@@ -38,11 +39,12 @@ module testbench(
     .Reg_b(BRegout),
     .Reg_a(ARegout),
     //.opcode(opcode),
-    .Awrite(Awrite),
-    .Bwrite(Bwrite),
-    .Mwrite(Mwrite),
+    .Awrite_delay(Awrite),
+    .Bwrite_delay(Bwrite),
+    .Mwrite_delay(Mwrite),
     .PCwrite(PCwrite),
-    .Reg_output(Reg_output)
+    .Reg_output(Reg_output),
+    .ramdisplay(ramdisplay)
     );
     
     initial

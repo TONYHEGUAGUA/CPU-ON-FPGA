@@ -31,9 +31,9 @@
     output [3:0]Regsel
     
     //BELOW FOR SIMULATION USE
-    ,output [7:0]instraddr,Reg_b,Reg_a,Reg_output,RamM,
-
-    output  Awrite,Bwrite,Mwrite,PCwrite
+    //,output [7:0]instraddr,Reg_b,Reg_a,Reg_output,RamM,
+    //output  Awrite_delay,Bwrite_delay,Mwrite_delay,PCwrite,
+    //output [0:2][7:0]ramdisplay
     
 );
      //CLK switch
@@ -76,8 +76,8 @@
     
     assign seg = ALUout;//LEDs
 
-    //display display_inst(CLK100MHz,ina,instraddr,Reg_a,Reg_b,RamM,ramdisplay,MRegout,Regout,Regsel);
-    display display_inst(CLK100MHz,ina,instraddr,Reg_b,Bwrite_delay,Reg_output,ramdisplay,MRegout,Regout,Regsel);
+    display display_inst(CLK100MHz,ina,instraddr,Reg_a,Reg_b,RamM,ramdisplay,MRegout,Regout,Regsel);
+    //display display_inst(CLK100MHz,ina,instraddr,Reg_b,Bwrite_delay,Reg_output,ramdisplay,MRegout,Regout,Regsel);
     //In order to figuret out why PCreg doesn't work, I make a delay register.
 
 endmodule
