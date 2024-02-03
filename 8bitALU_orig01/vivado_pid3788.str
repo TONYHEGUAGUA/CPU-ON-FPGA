@@ -600,8 +600,8 @@ selectCodeEditor("seg_led.v", 282, 466); // ce (w, ck)
 // Elapsed time: 109 seconds
 selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 1); // i (N, ck)
 selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 1); // i (N, ck)
-selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Mux.v]", 9, false); // B (D, ck)
-selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Mux.v]", 9, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Mux8bit.v]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog, xil_defaultlib, Mux8bit.v]", 9, false, false, false, false, false, true); // B (D, ck) - Double Click
 closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
 // Elapsed time: 27 seconds
 selectCodeEditor("seg_led.v", 776, 270); // ce (w, ck)

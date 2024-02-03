@@ -3,14 +3,14 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2024/01/07 20:24:33
+// Create Date: 2024/01/07 21:12:15
 // Design Name: 
-// Module Name: Mux
+// Module Name: register
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
 // Description: 
-// 
+// Register with 11 bits.
 // Dependencies: 
 // 
 // Revision:
@@ -20,21 +20,19 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Mux(
-    input write,switch,
-    output reg writeout0,writeout1
+module BHTregister(
+    input CLK,write,
+    input [10:0] Bytein,
+    output [10:0] Byteout
     );
-    always@(switch,write)
+    reg [10:0]ByteMemo;
+    always@(posedge CLK)
+    if(write == 1)ByteMemo <= Bytein;
+    
+    assign Byteout = ByteMemo;
+
+    initial
     begin
-        if( switch==0)
-        begin
-         writeout0 = write;
-         writeout1 = 0;
-        end
-        if( switch==1)
-        begin
-         writeout0 = 0;
-         writeout1 = write;
-        end
+        ByteMemo = 11'b0;
     end
 endmodule

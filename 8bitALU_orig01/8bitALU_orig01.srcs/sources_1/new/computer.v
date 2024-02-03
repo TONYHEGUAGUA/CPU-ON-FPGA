@@ -33,7 +33,8 @@
     //BELOW FOR SIMULATION USE
     //,output [7:0]instraddr,Reg_b,Reg_a,Reg_output,RamM,
     //output  Awrite_delay,Bwrite_delay,Mwrite_delay,PCwrite,
-    //output [0:2][7:0]ramdisplay
+    //output [0:2][7:0]ramdisplay,
+    //output activate
     
 );
      //CLK switch
@@ -61,18 +62,82 @@
      wire [7:0] Reg_output;
      wire Reg_ARisk, Reg_BRisk, Reg_MRisk;
      //confirm the instruction
-     PCregister PCregister_inst(CLK,PCwrite,~PROGRAM1,~PROGRAM2,Reg_b,instraddr);
+         wire activate,PCtraceback;
+     wire [2:0]BHTdata;
+     wire [2:0][7:0]PC_delay;
+     wire [7:0]BTA;
+     wire [1:0]CS;
+     PCregister PCregister_inst(CLK,PCwrite,activate,CS[1],PCtraceback,~PROGRAM1,~PROGRAM2,Reg_b,BTA,instraddr,PC_delay);
 
-     instruction_fetch instruction_fetch_inst(CLK,instraddr,PCwrite,instr);//Here complete INSTRUCTION_FETCH
+     dynamic_predictor dynamic_predictor_inst(CLK,instraddr,PC_delay[2],BHTdata,Reg_b,BTA,CS,activate);
      
-     instruction_decode instruction_decode_inst(CLK,instr,PCwrite,Awrite,Bwrite,Mwrite,opcode,jumpcode,regBtransmit,Reg_ARisk,Reg_BRisk,Reg_MRisk);//control whether change RegB or execute ALU
-     
-     instruction_execute instruction_execute_inst(CLK,opcode,Reg_a,Reg_b,RamM,regBtransmit,Reg_ARisk, Reg_BRisk, Reg_MRisk,PCwrite,Awrite,Bwrite,Mwrite,Awrite_delay,Bwrite_delay,Mwrite_delay,Reg_output,ALUout);//refresh the registers and output the seg.
+    instruction_fetch instruction_fetch_inst(
+      .CLK(CLK),
+      .instraddr(instraddr),
+      .PCwrite(PCwrite),
+      .instr(instr)
+    ); // Here complete INSTRUCTION_FETCH
 
-     instruction_writeback instruction_writeback_inst(CLK,Awrite_delay,Bwrite_delay,Mwrite_delay,PCwrite,Reg_output,Reg_a,Reg_b,RamM,ramdisplay);//transmit the value from outputregister to Aregister,Bregister or RAM;
-    
-    //confirm PC counter's next step
-    PCcontrol PCcontrol_inst(CLK,jumpcode,ALUout,PCwrite);
+    instruction_decode instruction_decode_inst(
+      .CLK(CLK),
+      .instr(instr),
+      .PCwrite(PCwrite),
+      .Awrite(Awrite),
+      .Bwrite(Bwrite),
+      .Mwrite(Mwrite),
+      .opcode(opcode),
+      .jumpcode(jumpcode),
+      .regBtransmit(regBtransmit),
+      .Reg_ARisk(Reg_ARisk),
+      .Reg_BRisk(Reg_BRisk),
+      .Reg_MRisk(Reg_MRisk)
+    ); // control whether change RegB or execute ALU
+
+    instruction_execute instruction_execute_inst(
+      .CLK(CLK),
+      .opcode(opcode),
+      .Reg_a(Reg_a),
+      .Reg_b(Reg_b),
+      .RamM(RamM),
+      .regBtransmit(regBtransmit),
+      .Reg_ARisk(Reg_ARisk),
+      .Reg_BRisk(Reg_BRisk),
+      .Reg_MRisk(Reg_MRisk),
+      .PCwrite(PCwrite),
+      .Awrite(Awrite),
+      .Bwrite(Bwrite),
+      .Mwrite(Mwrite),
+      .Awrite_delay(Awrite_delay),
+      .Bwrite_delay(Bwrite_delay),
+      .Mwrite_delay(Mwrite_delay),
+      .Reg_output(Reg_output),
+      .ALUout(ALUout)
+    ); // refresh the registers and output the seg.
+
+    instruction_writeback instruction_writeback_inst(
+      .CLK(CLK),
+      .Awrite(Awrite_delay),
+      .Bwrite(Bwrite_delay),
+      .Mwrite(Mwrite_delay),
+      .PCwrite(PCwrite),
+      .Reg_output(Reg_output),
+      .Reg_a(Reg_a),
+      .Reg_b(Reg_b),
+      .RamM(RamM),
+      .ramdisplay(ramdisplay)
+    ); // transmit the value from output register to A register, B register, or RAM
+
+    // confirm PC counter's next step
+    PCcontrol PCcontrol_inst(
+      .CLK(CLK),
+      .activate(activate),
+      .CS(CS),
+      .jumpcode(jumpcode),
+      .ALUout(ALUout),
+      .BHTdata(BHTdata),
+      .PCwrite(PCwrite),
+      .PCtraceback(PCtraceback)
+    );
     
     assign seg = ALUout;//LEDs
 

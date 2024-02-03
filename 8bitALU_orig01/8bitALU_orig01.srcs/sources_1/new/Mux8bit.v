@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2023/12/20 00:18:16
+// Create Date: 2024/01/07 20:24:33
 // Design Name: 
-// Module Name: adder
+// Module Name: Mux8bit
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,9 +19,22 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module adder(
-input [7:0]Reg_a,Reg_b,
-output [7:0] sum
+
+module Mux8bit(
+    input write,switch,
+    output reg writeout0,writeout1
     );
-    assign sum = Reg_a + Reg_b;
+    always@(switch,write)
+    begin
+        if( switch==0)
+        begin
+         writeout0 = write;
+         writeout1 = 0;
+        end
+        if( switch==1)
+        begin
+         writeout0 = 0;
+         writeout1 = write;
+        end
+    end
 endmodule
