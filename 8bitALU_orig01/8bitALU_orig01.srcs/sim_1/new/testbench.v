@@ -28,6 +28,7 @@ module testbench(
     //wire [2:0]opcode;
     wire  Awrite,Bwrite,Mwrite,PCwrite;
     wire [0:2][7:0]ramdisplay;
+    wire activate;
     
     computer computer_inst(
     .CLK100MHz(CLK100MHz),
@@ -44,7 +45,8 @@ module testbench(
     .Mwrite_delay(Mwrite),
     .PCwrite(PCwrite),
     .Reg_output(Reg_output),
-    .ramdisplay(ramdisplay)
+    .ramdisplay(ramdisplay),
+    .activate(activate)
     );
     
     initial

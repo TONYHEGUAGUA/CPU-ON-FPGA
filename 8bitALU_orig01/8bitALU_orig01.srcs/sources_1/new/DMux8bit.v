@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2023/12/20 00:18:16
+// Create Date: 2024/01/07 20:24:33
 // Design Name: 
-// Module Name: adder
+// Module Name: DMux8bit
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,9 +19,15 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module adder(
-input [7:0]Reg_a,Reg_b,
-output [7:0] sum
+
+module DMux8bit(
+    input [7:0]Memory0,Memory1,
+    input switch,
+    output reg [7:0]Memoryout
     );
-    assign sum = Reg_a + Reg_b;
+    always@(switch,Memory0,Memory1)
+    begin
+        if( switch==0 ) Memoryout = Memory0;
+        if( switch==1 ) Memoryout = Memory1;
+    end
 endmodule

@@ -33,30 +33,28 @@ module PCcontrol(
    
     //可能函数的输入就写错了？
     //可能这两个delay的时长不对？
-    //mark on Jan 29th, 2024
-    //我认为这里需要一个输出寄存器的的数值而不是ALU的直接输出aluout，因为这里对输出结果相关联的jump是要求稳定的，和CLK同步发生的ALUout必然会产生一个不正确的结果。
+    
     wire jump;//whether jump or not
     assign jump=(jumpcode[1]&~ALUout[7]&~ALUout[6]&~ALUout[5]&~ALUout[4]&~ALUout[3]&~ALUout[2]&~ALUout[1]&~ALUout[0])|(jumpcode[0]&~ALUout[7]&(ALUout[6]|ALUout[5]|ALUout[4]|ALUout[3]|ALUout[2]|ALUout[1]|ALUout[0]))|(jumpcode[1]&jumpcode[0]);
     reg [1:0]activate_delay;
     reg [1:0][1:0]CS_delay;
     always @(posedge CLK)
     begin
-    activate_delay[0] <= activate;
-    activate_delay[1] <= activate_delay[0];//做两步延迟
-    CS_delay[0]<=CS;
-    CS_delay[1]<=CS_delay[0];
-    PCwrite <= (~activate_delay[1]&jump)|(activate_delay[1]&CS_delay[1][1]&~jump)|(activate_delay[1]&~CS_delay[1][1]&jump);//when it's different,meaning predicting wrong.
-    PCtraceback <= activate_delay[1]&CS_delay[1][1]&~jump;//动态预测已激活，且发生了跳转，但是实际上不需要跳转时为1
-    //四种情形，①预测器预测跳转，实际确实跳转。
-    //②预测器预测不跳转，实际确实不跳转。
-    //③预测器预测不跳转，实际跳转。
-    //④预测器预测跳转，实际不跳转。
-    //一二两种情况只需要PCwrite为0即可。三四情况PCwrite需要介入，并且四情况比较复杂，需要将PC寄存器回溯到跳转前。
-    //when ~activate_delay[1]&jump, just make PC=regB.
-    //But when activate_delay[1]&~jump, return traceback.
-    
-    //BHTdata[2]<= jumpcode[1]|jumpcode[0];
-    BHTdata[2]<=1'b1;
+        activate_delay[0] <= activate;
+        activate_delay[1] <= activate_delay[0];//做两步延迟
+        CS_delay[0]<=CS;
+        CS_delay[1]<=CS_delay[0];
+        PCwrite <= (~activate_delay[1]&jump)|(activate_delay[1]&CS_delay[1][1]&~jump)|(activate_delay[1]&~CS_delay[1][1]&jump)?1:0;//when it's different,meaning predicting wrong.
+        PCtraceback <= activate_delay[1]&CS_delay[1][1]&~jump;//动态预测已激活，且发生了跳转，但是实际上不需要跳转时为1
+        //四种情形，①预测器预测跳转，实际确实跳转。
+        //②预测器预测不跳转，实际确实不跳转。
+        //③预测器预测不跳转，实际跳转。
+        //④预测器预测跳转，实际不跳转。
+        //一二两种情况只需要PCwrite为0即可。三四情况PCwrite需要介入，并且四情况比较复杂，需要将PC寄存器回溯到跳转前。
+        //when ~activate_delay[1]&jump, just make PC=regB.
+        //But when activate_delay[1]&~jump, return traceback.
+        
+        BHTdata[2]<= jumpcode[1]|jumpcode[0];
     end
     CS_FSM CS_FSM_inst(CLK,activate_delay[1],jump,CS_delay[1],BHTdata[1:0]);
 endmodule

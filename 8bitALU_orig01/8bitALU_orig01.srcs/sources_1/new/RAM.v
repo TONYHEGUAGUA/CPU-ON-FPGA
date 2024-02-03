@@ -29,8 +29,8 @@ module RAM(
     wire [0:255][7:0] Memory ;
     assign ramdisplay[0:2] = Memory[125:127];
     
-    Mux256bit Mux256bit_inst(write, addr, writeout);
+    Mux256way8bit Mux256way8bit_inst(write, addr, writeout);
     register256 register256_inst(CLK, writeout, Bytein, Memory);
-    DMux256bit DMux256bit_inst(Memory, addr, Byteout);
+    DMux256way8bit DMux256way8bit_inst(Memory, addr, Byteout);
     
 endmodule

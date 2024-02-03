@@ -122,6 +122,6 @@ wire [0:255][7:0] Memory;
     assign Memory[86] = 8'b00000000;
     assign Memory[87] = 8'b00000000;
     assign Memory[88] = 8'b00000000;
-DMux256bit DMux256bit_inst(Memory, addr, Byteout);
+DMux256way8bit DMux256way8bit_inst(Memory, addr, Byteout);
 
 endmodule

@@ -10,7 +10,8 @@
 // Target Devices: 
 // Tool Versions: 
 // Description: 
-// 
+// 功能1：从数据中提取出BHT的数据，然后进行预测，然后输出预测的结果。
+// 功能2：从PCcontrol控制单元更新的数据写入BHT中。
 // Dependencies: 
 // 
 // Revision:
@@ -21,19 +22,19 @@
 
 module dynamic_predictor(
     input CLK,
-    input [7:0]instraddr,jumpaddr,//jumpcode是跳转指令的ROM地址
+    input [7:0]instraddr,jumpaddr,//jumpaddr是跳转指令的ROM地址
     input [2:0]BHTdata,//{activate,CS}
-    input [7:0]TBA,//BHT which is prepared to be stored in BHT //regB actually
-    output [7:0]BTA,
+    input [7:0]BIA,//Branch Instruction Address.(the BHA which is prepared to be stored in BHT)//regB actually
+    output [7:0]BTA,//Branch Target Address
     output [1:0]CS,
     output activate
 );
     wire [10:0]Poutput;
     assign BTA = Poutput[7:0];
-    //assign CS = Poutput[9:8];
-    assign CS = 2'b11;
-    //assign activate = Poutput[10];
-    assign activate = 1'b1;
+    assign CS = Poutput[9:8];
+    //assign CS = 2'b00;
+    assign activate = Poutput[10];
+    //assign activate = 1'b0;
     
     reg [7:0]addr;
     always@(*)
@@ -43,7 +44,7 @@ module dynamic_predictor(
     end
     
     //第一个CLK实际上是是否写入的标识，当为高电平时表示即将写入数据，然后在CLK跳到低电平时，更新数据
-    BHT BHT_inst(addr,CLK,~CLK,{BHTdata,TBA},Poutput);
-    //BHT BHT_inst(addr,CLK,~CLK,{3'b111,TBA},Poutput);
+    //BHT BHT_inst(addr,CLK,~CLK,{BHTdata,BIA},Poutput);
+    BHT BHT_inst(addr,CLK,~CLK,{3'b111,BIA},Poutput);
     
 endmodule

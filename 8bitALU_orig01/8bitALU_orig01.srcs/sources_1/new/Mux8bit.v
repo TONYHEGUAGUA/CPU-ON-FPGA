@@ -5,7 +5,7 @@
 // 
 // Create Date: 2024/01/07 20:24:33
 // Design Name: 
-// Module Name: Mux
+// Module Name: Mux8bit
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Mux(
+module Mux8bit(
     input write,switch,
     output reg writeout0,writeout1
     );
