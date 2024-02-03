@@ -44,7 +44,7 @@ module dynamic_predictor(
     end
     
     //第一个CLK实际上是是否写入的标识，当为高电平时表示即将写入数据，然后在CLK跳到低电平时，更新数据
-    //BHT BHT_inst(addr,CLK,~CLK,{BHTdata,BIA},Poutput);
-    BHT BHT_inst(addr,CLK,~CLK,{3'b111,BIA},Poutput);
+    BHT BHT_inst(addr,CLK,~CLK,{BHTdata,BIA},Poutput);
+    //BHT BHT_inst(addr,CLK,~CLK,{3'b111,BIA},Poutput);
     
 endmodule

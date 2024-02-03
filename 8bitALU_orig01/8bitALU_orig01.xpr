@@ -31,7 +31,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="83"/>
+    <Option Name="WTXSimLaunchSim" Val="85"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -434,8 +434,8 @@
         <Step Id="synth_design">
           <Option Id="ResourceSharing">2</Option>
           <Option Id="ShregMinSize">5</Option>
-          <Option Id="FsmExtraction">1</Option>
           <Option Id="KeepEquivalentRegisters">1</Option>
+          <Option Id="FsmExtraction">1</Option>
           <Option Id="NoCombineLuts">1</Option>
           <Option Id="RepFanoutThreshold">400</Option>
         </Step>
@@ -449,8 +449,8 @@
         <Step Id="synth_design">
           <Option Id="ResourceSharing">2</Option>
           <Option Id="ShregMinSize">5</Option>
-          <Option Id="FsmExtraction">1</Option>
           <Option Id="KeepEquivalentRegisters">1</Option>
+          <Option Id="FsmExtraction">1</Option>
           <Option Id="NoCombineLuts">1</Option>
           <Option Id="RepFanoutThreshold">400</Option>
         </Step>

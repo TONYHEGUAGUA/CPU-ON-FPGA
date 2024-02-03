@@ -31,10 +31,10 @@
     output [3:0]Regsel
     
     //BELOW FOR SIMULATION USE
-    ,output [7:0]instraddr,Reg_b,Reg_a,Reg_output,RamM,
-    output  Awrite_delay,Bwrite_delay,Mwrite_delay,PCwrite,
-    output [0:2][7:0]ramdisplay,
-    output activate
+    //,output [7:0]instraddr,Reg_b,Reg_a,Reg_output,RamM,
+    //output  Awrite_delay,Bwrite_delay,Mwrite_delay,PCwrite,
+    //output [0:2][7:0]ramdisplay,
+    //output activate
     
 );
      //CLK switch
