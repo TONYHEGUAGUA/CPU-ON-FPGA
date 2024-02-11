@@ -2,27 +2,13 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Jan 28 21:16:47 2024
-# Process ID: 5388
-# Current directory: C:/Users/tonyh/Documents/GitHub/CPU-ON-FPGA_huyan/8bitALU_orig01
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7600 C:\Users\tonyh\Documents\GitHub\CPU-ON-FPGA_huyan\8bitALU_orig01\8bitALU_orig01.xpr
-# Log file: C:/Users/tonyh/Documents/GitHub/CPU-ON-FPGA_huyan/8bitALU_orig01/vivado.log
-# Journal file: C:/Users/tonyh/Documents/GitHub/CPU-ON-FPGA_huyan/8bitALU_orig01\vivado.jou
+# Start of session at: Sun Feb 11 22:56:30 2024
+# Process ID: 24464
+# Current directory: D:/大创/github/CPU-ON-FPGA/8bitALU_orig01
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17740 D:\大创\github\CPU-ON-FPGA\8bitALU_orig01\8bitALU_orig01.xpr
+# Log file: D:/大创/github/CPU-ON-FPGA/8bitALU_orig01/vivado.log
+# Journal file: D:/大创/github/CPU-ON-FPGA/8bitALU_orig01\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/tonyh/Documents/GitHub/CPU-ON-FPGA_huyan/8bitALU_orig01/8bitALU_orig01.xpr
+open_project D:/大创/github/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.xpr
 update_compile_order -fileset sources_1
-close [ open C:/Users/tonyh/Documents/GitHub/CPU-ON-FPGA_huyan/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/outputregister.v w ]
-add_files C:/Users/tonyh/Documents/GitHub/CPU-ON-FPGA_huyan/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/outputregister.v
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-close [ open C:/Users/tonyh/Documents/GitHub/CPU-ON-FPGA_huyan/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_writeback.v w ]
-add_files C:/Users/tonyh/Documents/GitHub/CPU-ON-FPGA_huyan/8bitALU_orig01/8bitALU_orig01.srcs/sources_1/new/instruction_writeback.v
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-launch_runs synth_2 -jobs 8
-wait_on_run synth_2

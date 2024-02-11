@@ -1,0 +1,168 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 5928
+License: Customer
+
+Current time: 	Wed Feb 07 22:17:59 CST 2024
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1440x960
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 61 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/ruanjian/vivado/Vivado/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/ruanjian/vivado/Vivado/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	15774
+User home directory: C:/Users/15774
+User working directory: D:/大创/github/CPU-ON-FPGA/8bitALU_orig01
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/ruanjian/vivado/Vivado/Vivado
+HDI_APPROOT: D:/ruanjian/vivado/Vivado/Vivado/2018.2
+RDI_DATADIR: D:/ruanjian/vivado/Vivado/Vivado/2018.2/data
+RDI_BINDIR: D:/ruanjian/vivado/Vivado/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/15774/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/15774/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/15774/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/ruanjian/vivado/Vivado/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/大创/github/CPU-ON-FPGA/8bitALU_orig01/vivado.log
+Vivado journal file location: 	D:/大创/github/CPU-ON-FPGA/8bitALU_orig01/vivado.jou
+Engine tmp dir: 	D:/大创/github/CPU-ON-FPGA/8bitALU_orig01/.Xil/Vivado-5928-llliii
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/ruanjian/vivado/Vivado/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: D:/ruanjian/vivado/Vivado/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/ruanjian/vivado/Vivado/Vivado/2018.2
+XILINX_SDK: D:/ruanjian/vivado/Vivado/SDK/2018.2
+XILINX_VIVADO: D:/ruanjian/vivado/Vivado/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/ruanjian/vivado/Vivado/Vivado/2018.2
+
+
+GUI allocated memory:	176 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 576 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 55 MB (+55562kb) [00:00:09]
+// [Engine Memory]: 491 MB (+362850kb) [00:00:09]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: D:\大创\github\CPU-ON-FPGA\8bitALU_orig01\8bitALU_orig01.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 65 MB (+7276kb) [00:00:10]
+// Tcl Message: open_project D:/大创/github/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/大创/github/CPU-ON-FPGA/8bitALU_orig01/8bitALU_orig01.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/huyan/Documents/CPU-ON-FPGA/8bitALU_orig01' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/ruanjian/vivado/Vivado/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 69 MB (+214kb) [00:00:13]
+// [Engine Memory]: 615 MB (+105042kb) [00:00:13]
+// [GUI Memory]: 77 MB (+5000kb) [00:00:14]
+// HMemoryUtils.trashcanNow. Engine heap size: 647 MB. GUI used memory: 37 MB. Current time: 2/7/24 10:18:02 PM CST
+// [Engine Memory]: 664 MB (+19032kb) [00:00:14]
+// Project name: 8bitALU_orig01; location: D:/大创/github/CPU-ON-FPGA/8bitALU_orig01; part: xc7a75tfgg484-2
+// Tcl Message: open_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 864.535 ; gain = 130.102 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 713 MB (+15992kb) [00:00:18]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Carry_Flag (Carry_Flag.v)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Carry_Flag (Carry_Flag.v)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Carry_Flag (Carry_Flag.v)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Overflow_Flag (Overflow_Flag.v)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Overflow_Flag (Overflow_Flag.v)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Parity_Flag (Parity_Flag.v)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Parity_Flag (Parity_Flag.v)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Parity_Flag.v", 109, 193); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Sign_Flag (Sign_Flag.v)]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Sign_Flag (Sign_Flag.v)]", 5, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Sign_Flag.v", 112, 211); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Zero_Flag (Zero_Flag.v)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Zero_Flag (Zero_Flag.v)]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Zero_Flag.v", 88, 94); // ce (w, ck)
+// Elapsed time: 95 seconds
+selectCodeEditor("Zero_Flag.v", 105, 137); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Carry_Flag (Carry_Flag.v)]", 2, false); // B (D, ck)
+// Elapsed time: 64 seconds
+selectCodeEditor("Zero_Flag.v", 157, 213); // ce (w, ck)
+// [GUI Memory]: 82 MB (+1482kb) [00:03:49]
+// Elapsed time: 12 seconds
+selectCodeEditor("Zero_Flag.v", 222, 167); // ce (w, ck)
+// Elapsed time: 45 seconds
+selectCodeEditor("Zero_Flag.v", 99, 283); // ce (w, ck)
+// k (ck): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, ck)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Text Changed"); // k (ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Zero_Flag (Zero_Flag.v)]", 6, false); // B (D, ck)
+// [GUI Memory]: 86 MB (+73kb) [00:04:54]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Zero_Flag (Zero_Flag.v)]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Zero_Flag (Zero_Flag.v)]", 7, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Zero_Flag.v", 156, 158); // ce (w, ck)
+// [Engine Memory]: 759 MB (+11131kb) [00:05:04]
+// HMemoryUtils.trashcanNow. Engine heap size: 759 MB. GUI used memory: 44 MB. Current time: 2/7/24 10:22:52 PM CST
+selectCodeEditor("Zero_Flag.v", 125, 229); // ce (w, ck)
+// k (ck): Text Changed: addNotify
+// Elapsed time: 81 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, ck)
+// Elapsed time: 26 seconds
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_NO, "No"); // a (k)
+dismissDialog("Text Changed"); // k (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Zero_Flag (Zero_Flag.v)]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Zero_Flag (Zero_Flag.v)]", 7, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("Zero_Flag.v", 106, 160); // ce (w, ck)
+// k (ck): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, ck)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Text Changed"); // k (ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 36 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectCodeEditor("Sign_Flag.v", 268, 212); // ce (w, ck)
+selectCodeEditor("Sign_Flag.v", 92, 328); // ce (w, ck)
+selectCodeEditor("Sign_Flag.v", 116, 285); // ce (w, ck)
+selectCodeEditor("Sign_Flag.v", 99, 340); // ce (w, ck)
+// Elapsed time: 101 seconds
+selectCodeEditor("Sign_Flag.v", 257, 204); // ce (w, ck)
+selectCodeEditor("Sign_Flag.v", 113, 196); // ce (w, ck)
