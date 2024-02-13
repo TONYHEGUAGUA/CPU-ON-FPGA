@@ -24,7 +24,7 @@ module outputregister(
     input CLK,
     input [7:0]ALUout,
     input [7:0]regBtransmit,
-    output reg [7:0] Reg_output// forget reg& it;s an array.:(
+    output reg [7:0] Reg_output// forget reg& it's an array.:(
     );
     always @(posedge CLK ) 
     begin

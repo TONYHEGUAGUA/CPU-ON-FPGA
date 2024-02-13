@@ -16,6 +16,7 @@
 // 
 // Revision:
 // Revision 0.01 - File Created
+//0.02 - bug fixed: PCwrite register will be flushed too.
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
@@ -31,11 +32,10 @@ module PCcontrol(
     output reg PCwrite,PCtraceback
     ); 
    
-    //可能函数的输入就写错了？
-    //可能这两个delay的时长不对？
     
     wire jump;//whether jump or not
-    assign jump=(jumpcode[1]&~ALUout[7]&~ALUout[6]&~ALUout[5]&~ALUout[4]&~ALUout[3]&~ALUout[2]&~ALUout[1]&~ALUout[0])|(jumpcode[0]&~ALUout[7]&(ALUout[6]|ALUout[5]|ALUout[4]|ALUout[3]|ALUout[2]|ALUout[1]|ALUout[0]))|(jumpcode[1]&jumpcode[0]);
+    //assign jump=(jumpcode[1]&~ALUout[7]&~ALUout[6]&~ALUout[5]&~ALUout[4]&~ALUout[3]&~ALUout[2]&~ALUout[1]&~ALUout[0])|(jumpcode[0]&~ALUout[7]&(ALUout[6]|ALUout[5]|ALUout[4]|ALUout[3]|ALUout[2]|ALUout[1]|ALUout[0]))|(jumpcode[1]&jumpcode[0]);
+    assign jump=~PCwrite&(jumpcode[1]&~ALUout[7]&~ALUout[6]&~ALUout[5]&~ALUout[4]&~ALUout[3]&~ALUout[2]&~ALUout[1]&~ALUout[0])|(jumpcode[0]&~ALUout[7]&(ALUout[6]|ALUout[5]|ALUout[4]|ALUout[3]|ALUout[2]|ALUout[1]|ALUout[0]))|(jumpcode[1]&jumpcode[0]);
     reg [1:0]activate_delay;
     reg [1:0][1:0]CS_delay;
     always @(posedge CLK)
