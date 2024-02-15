@@ -60,9 +60,8 @@
      wire [1:0]jumpcode;
      wire [0:2][7:0]ramdisplay;
      wire [7:0] Reg_output;
-     wire Reg_ARisk, Reg_BRisk, Reg_MRisk;
      //confirm the instruction
-         wire activate,PCtraceback;
+     wire activate,PCtraceback;
      wire [2:0]BHTdata;
      wire [2:0][7:0]PC_delay;
      wire [7:0]BTA;
@@ -87,10 +86,7 @@
       .Mwrite(Mwrite),
       .opcode(opcode),
       .jumpcode(jumpcode),
-      .regBtransmit(regBtransmit),
-      .Reg_ARisk(Reg_ARisk),
-      .Reg_BRisk(Reg_BRisk),
-      .Reg_MRisk(Reg_MRisk)
+      .regBtransmit(regBtransmit)
     ); // control whether change RegB or execute ALU
 
     instruction_execute instruction_execute_inst(
@@ -100,9 +96,6 @@
       .Reg_b(Reg_b),
       .RamM(RamM),
       .regBtransmit(regBtransmit),
-      .Reg_ARisk(Reg_ARisk),
-      .Reg_BRisk(Reg_BRisk),
-      .Reg_MRisk(Reg_MRisk),
       .PCwrite(PCwrite),
       .Awrite(Awrite),
       .Bwrite(Bwrite),

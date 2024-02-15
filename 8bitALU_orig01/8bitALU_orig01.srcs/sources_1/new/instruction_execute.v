@@ -24,7 +24,6 @@ module instruction_execute(
     input CLK,
     input [2:0]opcode,
     input [7:0]Reg_a,Reg_b,RamM,regBtransmit,
-    input Reg_ARisk, Reg_BRisk, Reg_MRisk,
 
     input PCwrite,
     input Awrite,Bwrite,Mwrite, //write enable
