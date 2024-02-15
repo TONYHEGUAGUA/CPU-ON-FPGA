@@ -40,9 +40,9 @@ module instruction_execute(
         Bwrite_delay <= ~PCwrite&Bwrite;
         Mwrite_delay <= ~PCwrite&Mwrite;
     end
-
+wire Carry;
     ALU ALU_inst(Awrite_delay,Bwrite_delay,Mwrite_delay,opcode[2:0],Reg_a,Reg_b,RamM,Carry,Reg_output,ALUout);//ESP:replace XRisk by Xwrite_delay
     outputregister outputregister_inst(CLK ,ALUout,regBtransmit, Reg_output);
-    Carry Carry_Flag(Reg_a, Reg_b, opcode[2:0],RAM, C, Reg_carry,CLK);
+    Carry_Flag Carry_Flag_inst(Reg_a, Reg_b, opcode[2:0], CLK,Carry);
 
 endmodule
