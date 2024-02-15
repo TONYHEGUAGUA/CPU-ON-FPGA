@@ -21,14 +21,14 @@
 
 
 
-module Carry_Flag(input [7:0]Reg_a, Reg_b, Carry,input [2:0]opcode,input RAM, output reg[7:0]C, output reg Reg_carry,CLK);
-    reg cout;
+module Carry_Flag(input [7:0]Reg_a, Reg_b,input [2:0]opcode,input RAM, output reg[7:0]C, output reg Reg_carry,CLK);
+    //reg cout;
     always@(posedge CLK)begin
         if(opcode == 010) begin //有符号加法
-            {cout, C} = Reg_a + Reg_b+Carry;
-                    Reg_carry = cout;      //进位
+            {Reg_carry, C} = Reg_a + Reg_b+Reg_carry;
+                    Reg_carry = Reg_carry;      //进位
         end
-        else Reg_carry<=0;
+        else Reg_carry<=Reg_carry;
     end
 endmodule
 
